@@ -9,7 +9,9 @@ redirect_from:
 
 About Me
 -----
-I am a junior student at Huazhong University of Science and Technology majoring in computer science, and I expect to obtain my BE degree in 2026. I am currently a research intern at the Berkeley AI Research (BAIR) lab at UC Berkeley, advised by Dr. [Chenfeng Xu](https://www.chenfengx.com/) and Prof. [Kurt Keutzer](https://people.eecs.berkeley.edu/~keutzer/). Before that, I worked as a student researcher at [VLRLab](http://vlrlab.aia.hust.edu.cn/) in HUST, under the supervision of Prof. [Xiang Bai](https://scholar.google.com/citations?user=UeltiQ4AAAAJ&hl=en) and Dr. [Dingkang Liang](https://dk-liang.github.io/).
+I am a junior student at Huazhong University of Science and Technology majoring in computer science, and I expect to obtain my BE degree in 2026. 
+
+I am currently a research intern at the Berkeley AI Research (BAIR), advised by Dr. [Chenfeng Xu](https://www.chenfengx.com/) and Prof. [Kurt Keutzer](https://people.eecs.berkeley.edu/~keutzer/). Before that, I worked as a student researcher at [VLRLab](http://vlrlab.aia.hust.edu.cn/) in HUST, under the supervision of Prof. [Xiang Bai](https://scholar.google.com/citations?user=UeltiQ4AAAAJ&hl=en) and Dr. [Dingkang Liang](https://dk-liang.github.io/).
 
 My research intrest lies on the Efficient Machine Learning and 3D Computer Vision. The ultimate goal is to create AI tools that can unleash people's potential.
 

@@ -21,12 +21,12 @@ repository               : "jerryfeng2003/jerryfeng2003.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpg"
   name             : "Tianrui Feng"
   pronouns         : # example: "she/her"  
-  bio              : "Junior Student in HUST"
+  bio              : "Student Researcher"
   location         : "Wuhan, China"
-  employer         : "Huazhong University of Science and Technology"
+  employer         : "HUST"
   uri              : # URL
   email            : "tianruifeng@hust.edu.cn" 
 
