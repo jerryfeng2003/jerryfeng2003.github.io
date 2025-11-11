@@ -56,51 +56,102 @@ Publications
 .gh-stars{font-weight:600; margin-left:6px; color:#333; font-size:0.95em}
 .github-link i{margin-right:4px}
 
-/* Publication layout tweaks: images scale naturally and stack on small screens */
+/* Publication layout tweaks */
 .publication-grid { grid-auto-rows: auto; }
 .publication-img img { display:block; }
 
-/* Scale image to match container width, then crop center portion */
+/* Image container: use cover so images are visually uniform */
 .publication-img { width:320px; height:220px; overflow:hidden; border-radius:8px; position:relative; display:flex; align-items:center; justify-content:center; }
-.publication-img img.publication-thumb { width:100%; height:auto; object-fit:contain; object-position:center; }
+.publication-img img.publication-thumb { width:100%; height:100%; object-fit:cover; object-position:center; }
 
 /* Compact icon links (small, no heavy background) */
 a[title]{ color: #1976d2; text-decoration: none; font-size: 0.95em; }
 
-@media (max-width: 700px) {
+/* Widen the content column for this page and normalize typography to match resume style */
+.page__content { max-width: 980px; margin-left: auto; margin-right: auto; }
+.page__content h2 { font-size: 1.4rem !important; margin-top: 1.1em; }
+.page__content h3 { font-size: 1.15rem !important; margin-top: 1em; }
+.page__content h4 { font-size: 1.05rem !important; margin-top: 0.6em; }
+.page__content p, .page__content li, .page__content dd { font-size: 0.95rem !important; color: #333; line-height: 1.5; }
+
+/* Research/Honors grid helper classes (used below) */
+.research-grid, .honors-grid { display: grid; grid-template-columns: 1fr auto; gap: 15px; align-items: start; margin-bottom: 12px; }
+.research-grid .meta, .honors-grid .meta { text-align: right; white-space: nowrap; font-size: 0.9em; color: #666; }
+
+@media (max-width: 900px) {
   .publication-grid { grid-template-columns: 1fr !important; }
-  .publication-img { justify-content: center; }
-  .publication-img { width:280px; height:180px }
-  .publication-img img.publication-thumb { max-width:none }
-  .action-buttons { flex-wrap:wrap; gap:6px }
+  .publication-img { width: 100%; height: 200px; }
+  .page__content { padding: 0 1rem; max-width: 100%; }
 }
 </style>
 
 <script>
-// Fetch GitHub star counts for elements with class 'gh-stars' using public GitHub API.
-// Note: unauthenticated requests are rate-limited (60/hr per IP). If you expect heavy traffic,
-// consider adding a server-side cache or GitHub token.
-async function fetchStars(repo){
-  try{
-    const res = await fetch('https://api.github.com/repos/' + repo);
-    if(!res.ok) return '–';
-    const j = await res.json();
-    return (j.stargazers_count || 0).toLocaleString();
-  }catch(e){
-    return '–';
+/*
+  Robust GitHub star fetcher with localStorage caching.
+  - Caches results 6 hours to avoid hitting unauthenticated rate limits
+  - Fills all elements with class 'gh-stars' (reads data-repo attribute)
+  - Falls back to a stale cached value or '–' on errors
+*/
+(async function(){
+  function cacheGet(key, maxAgeMs){
+    try{
+      const raw = localStorage.getItem(key);
+      if(!raw) return null;
+      const obj = JSON.parse(raw);
+      if(Date.now() - obj.t > maxAgeMs) { localStorage.removeItem(key); return null; }
+      return obj.v;
+    }catch(e){ return null; }
   }
-}
+  function cacheSet(key, value){
+    try{ localStorage.setItem(key, JSON.stringify({t: Date.now(), v: value})); }catch(e){}
+  }
 
-document.addEventListener('DOMContentLoaded', function(){
-  const els = document.querySelectorAll('.gh-stars');
-  els.forEach(async el => {
-    const repo = el.dataset.repo;
-    if(!repo) return;
-    el.textContent = '★';
-    const count = await fetchStars(repo);
-    el.textContent = '★ ' + count;
-  });
-});
+  async function fetchStars(repo){
+    const cacheKey = 'ghstars:' + repo;
+    const cached = cacheGet(cacheKey, 1000*60*60*6); // 6 hours
+    if(cached !== null) return cached;
+    try{
+      const res = await fetch('https://api.github.com/repos/' + repo, {headers:{'Accept':'application/vnd.github.v3+json'}});
+      if(!res.ok) {
+        const stale = cacheGet(cacheKey, Number.MAX_SAFE_INTEGER);
+        return stale !== null ? stale : '–';
+      }
+      const j = await res.json();
+      const count = (j.stargazers_count || 0).toLocaleString();
+      cacheSet(cacheKey, count);
+      return count;
+    }catch(e){
+      const stale = cacheGet(cacheKey, Number.MAX_SAFE_INTEGER);
+      return stale !== null ? stale : '–';
+    }
+  }
+
+  function render(el, text){ if(!el) return; el.textContent = '★ ' + text; }
+
+  function run(){
+    const els = document.querySelectorAll('.gh-stars');
+    if(!els || els.length === 0) return;
+    const repoMap = {};
+    els.forEach(el => {
+      const repo = el.dataset.repo;
+      if(repo) {
+        if(!repoMap[repo]) repoMap[repo] = [];
+        repoMap[repo].push(el);
+      }
+    });
+    Object.keys(repoMap).forEach(async repo => {
+      repoMap[repo].forEach(el => { el.textContent = '★ …'; });
+      const count = await fetchStars(repo);
+      repoMap[repo].forEach(el => render(el, count));
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', run);
+  } else {
+    run();
+  }
+})();
 </script>
 
 See full publication list on [Google Scholar ->](https://scholar.google.com/citations?user=Dy-V-1IAAAAJ&hl=en)
