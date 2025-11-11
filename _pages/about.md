@@ -24,10 +24,10 @@ Publications
     <img class="publication-thumb" src="/images/publications/streamdiffusionv2.png" alt="StreamDiffusionV2" />
   </div>
   <div>
-    <h4 style="margin-top: 0;">StreamDiffusionV2: A Streaming System for Dynamic and Interactive Video Generation</h4>
+    <p style="color: #666; margin: 5px 0; font-size: 1.3em;"><strong style="color: #000;">StreamDiffusionV2: A Streaming System for Dynamic and Interactive Video Generation</p>
     <p style="color: #000; font-style: italic; margin: 5px 0;"> Arxiv 2025</p>
     <p style="color: #666; margin: 5px 0; font-size: 0.9em;"><strong style="color: #000;">Tianrui Feng</strong>, Zhi Li, Shuo Yang, Haocheng Xi, Muyang Li, Xiuyu Li, Lvmin Zhang, Keting Yang, Kelly Peng, Song Han, Maneesh Agrawala, Kurt Keutzer, Akio Kodaira, Chenfeng Xu<sup>†</sup></p>
-    <p style="margin: 10px 0;">This paper is about a famous math equation, with applications in physics and computer science.</p>
+    <p style="margin: 10px 0;">An open-source interactive streaming system for real-time diffusion generation.</p>
     <div style="display:flex; gap:12px; align-items:center; margin-top:10px;">
       <a href="https://streamdiffusionv2.github.io/" title="Project" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fas fa-globe" aria-hidden="true"></i></a>
       <a href="https://arxiv.org/pdf/2511.07399" title="PDF" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fas fa-file-pdf" aria-hidden="true"></i></a>
@@ -41,7 +41,7 @@ Publications
     <img class="publication-thumb" src="/images/publications/pointgst.png" alt="PointGST" />
   </div>
   <div>
-    <h4 style="margin-top: 0;">Parameter-Efficient Fine-Tuning in Spectral Domain for Point Cloud Learning</h4>
+    <p style="color: #666; margin: 5px 0; font-size: 1.3em;"><strong style="color: #000;">Parameter-Efficient Fine-Tuning in Spectral Domain for Point Cloud Learning</p>
     <p style="color: #000; font-style: italic; margin: 5px 0;"> IEEE Transactions on Pattern Analysis and Machine Intelligence</p>
     <p style="color: #666; margin: 5px 0; font-size: 0.9em;">Dingkang Liang<sup>*</sup>, <strong style="color: #000;">Tianrui Feng<sup>*</sup></strong>, Xin Zhou<sup>*</sup>, Yumeng Zhang, Zhikang Zou, Xiang Bai<sup>†</sup></p>
     <p style="margin: 10px 0;">A spectral domain perspective for point PEFT, very strong performance.</p>
@@ -164,6 +164,3 @@ See full publication list on [Google Scholar ->](https://scholar.google.com/cita
   </div>
   <div style="text-align: right; white-space: nowrap; font-size: 0.9em; color: #666;">Aug 2023</div>
 </div>
-
-```
-
