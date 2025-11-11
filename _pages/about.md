@@ -9,11 +9,11 @@ redirect_from:
 
 About Me
 -----
-I am a senior student at Huazhong University of Science and Technology (HUST) majoring in computer science, and I expect to obtain my BE degree in 2026. 
+I am a senior Computer Science student at Huazhong University of Science and Technology (HUST), expecting to receive my B.Eng. degree in 2026.
 
-I am currently a student researcher at [VLRLab](http://vlrlab.aia.hust.edu.cn/) in HUST, under the supervision of Prof. [Xiang Bai](https://scholar.google.com/citations?user=UeltiQ4AAAAJ&hl=en). I used to be a research intern at BAIR, advised by Prof [Chenfeng Xu](https://www.chenfengx.com/), when visiting UC Berkeley.
+I am currently a student researcher at the [VLRLab](http://vlrlab.aia.hust.edu.cn/), advised by Prof. [Xiang Bai](https://scholar.google.com/citations?user=UeltiQ4AAAAJ&hl=en). Previously, I worked as a research intern at BAIR with Prof. [Chenfeng Xu](https://www.chenfengx.com/) during my visit to UC Berkeley.
 
-My research intrest lies on the Efficient Machine Learning and 3D Computer Vision. The ultimate goal is to create AI tools that can unleash people's potential.
+My research interests include efficient machine learning and 3D computer vision. I hope to build AI technologies that expand human potential.
 
 Publications
 ------
@@ -156,7 +156,8 @@ a[title]{ color: #1976d2; text-decoration: none; font-size: 0.95em; }
 
 See full publication list on [Google Scholar ->](https://scholar.google.com/citations?user=Dy-V-1IAAAAJ&hl=en)
 
-<h3 style="margin-top: 30px; margin-bottom: 5px; font-weight: bold; font-size: 1.1em; border-bottom: 1px solid #ddd; padding-bottom: 8px;">Research Experience</h3>
+Research Experience
+------
 
 <div style="display: grid; grid-template-columns: 1fr auto; gap: 15px; margin-bottom: 18px; align-items: start;">
   <div>
@@ -182,7 +183,8 @@ See full publication list on [Google Scholar ->](https://scholar.google.com/cita
   <div style="text-align: right; white-space: nowrap; font-size: 0.9em; color: #666;">Jun 2023 - Current</div>
 </div>
 
-<h3 style="margin-top: 30px; margin-bottom: 5px; font-weight: bold; font-size: 1.1em; border-bottom: 1px solid #ddd; padding-bottom: 8px;">Honors and Awards</h3>
+Honors and Awards
+------
 
 <div style="display: grid; grid-template-columns: 1fr auto; gap: 15px; margin-bottom: 12px; align-items: start;">
   <div>
