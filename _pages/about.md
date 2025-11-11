@@ -31,7 +31,7 @@ Publications
     <div style="display:flex; gap:12px; align-items:center; margin-top:10px;">
       <a href="https://streamdiffusionv2.github.io/" title="Project" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fas fa-globe" aria-hidden="true"></i></a>
       <a href="https://arxiv.org/pdf/2511.07399" title="PDF" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fas fa-file-pdf" aria-hidden="true"></i></a>
-      <a href="https://github.com/chenfengxu714/StreamDiffusionV2" class="github-link" data-repo="chenfengxu714/StreamDiffusionV2" title="GitHub" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fab fa-github" aria-hidden="true"></i> <span class="gh-stars" data-repo="chenfengxu714/StreamDiffusionV2" aria-hidden="true">…</span></a>
+      <a href="https://github.com/chenfengxu714/StreamDiffusionV2" class="github-link" data-repo="chenfengxu714/StreamDiffusionV2" title="GitHub" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fab fa-github" aria-hidden="true"></i> </a>
     </div>
   </div>
 </div>
@@ -47,7 +47,7 @@ Publications
     <p style="margin: 10px 0;">A spectral domain perspective for point PEFT, very strong performance.</p>
     <div style="display:flex; gap:12px; align-items:center; margin-top:10px;">
       <a href="https://arxiv.org/pdf/2410.08114" title="PDF" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fas fa-file-pdf" aria-hidden="true"></i></a>
-      <a href="https://github.com/jerryfeng2003/PointGST" class="github-link" data-repo="jerryfeng2003/PointGST" title="GitHub" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fab fa-github" aria-hidden="true"></i> <span class="gh-stars" data-repo="jerryfeng2003/PointGST" aria-hidden="true">…</span></a>
+      <a href="https://github.com/jerryfeng2003/PointGST" class="github-link" data-repo="jerryfeng2003/PointGST" title="GitHub" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fab fa-github" aria-hidden="true"></i> </a>
     </div>
   </div>
 </div>
