@@ -9,9 +9,9 @@ redirect_from:
 
 About Me
 -----
-I am a senior Computer Science student at Huazhong University of Science and Technology (HUST), expecting to receive my B.Eng. degree in 2026.
+I am a senior Computer Science student at [Huazhong University of Science and Technology (HUST)](https://en.wikipedia.org/wiki/Huazhong_University_of_Science_and_Technology), expecting to receive my B.Eng. degree in 2026.
 
-I am currently a student researcher at the [VLRLab](http://vlrlab.aia.hust.edu.cn/), advised by Prof. [Xiang Bai](https://scholar.google.com/citations?user=UeltiQ4AAAAJ&hl=en). Previously, I worked as a research intern at BAIR with Prof. [Chenfeng Xu](https://www.chenfengx.com/) during my visit to UC Berkeley.
+I am currently a student researcher at the [VLRLab](http://vlrlab.aia.hust.edu.cn/), advised by Prof. [Xiang Bai](https://scholar.google.com/citations?user=UeltiQ4AAAAJ&hl=en). Previously, I worked as a research intern at [BAIR](https://bair.berkeley.edu/) with Prof. [Chenfeng Xu](https://www.chenfengx.com/) during my visit to UC Berkeley.
 
 My research interests include efficient machine learning and 3D computer vision. I hope to build AI technologies that expand human potential.
 
