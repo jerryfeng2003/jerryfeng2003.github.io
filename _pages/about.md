@@ -188,7 +188,7 @@ Honors and Awards
 
 <div style="display: grid; grid-template-columns: 1fr auto; gap: 15px; margin-bottom: 12px; align-items: start;">
   <div>
-    <p style="margin: 0 0 2px 0; font-weight: bold;">Undergraduate Natural Science Innovation Fund (Top 0.1%, ~$7,000), Project Lead</p>
+    <p style="margin: 0 0 2px 0; font-weight: bold;">Undergraduate Natural Science Innovation Fund (~$7,000), Project Lead</p>
     <p style="margin: 0; color: #666; font-size: 0.9em;">Huazhong University of Science and Technology</p>
   </div>
   <div style="text-align: right; white-space: nowrap; font-size: 0.9em; color: #666;">Jun 2025</div>
