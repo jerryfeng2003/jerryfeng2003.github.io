@@ -25,7 +25,7 @@ Publications
   </div>
   <div>
     <h4 style="margin-top: 0;">StreamDiffusionV2: A Streaming System for Dynamic and Interactive Video Generation</h4>
-    <p style="color: #000; font-style: italic; margin: 5px 0;"> Arxiv 2025</p>
+    <p style="color: rgb(193, 38, 38); font-weight: bold; font-style: italic; margin: 5px 0;"> MLSys 2026</p>
     <p style="color: #666; margin: 5px 0; font-size: 0.9em;"><strong style="color: #000;">Tianrui Feng</strong>, Zhi Li, Shuo Yang, Haocheng Xi, Muyang Li, Xiuyu Li, Lvmin Zhang, Keting Yang, Kelly Peng, Song Han, Maneesh Agrawala, Kurt Keutzer, Akio Kodaira, Chenfeng Xu<sup>†</sup></p>
     <p style="margin: 10px 0;">An open-source interactive streaming system for real-time diffusion generation.</p>
     <div style="display:flex; gap:12px; align-items:center; margin-top:10px;">
@@ -42,7 +42,7 @@ Publications
   </div>
   <div>
     <h4 style="margin-top: 0;">Parameter-Efficient Fine-Tuning in Spectral Domain for Point Cloud Learning</h4>
-    <p style="color: #000; font-style: italic; margin: 5px 0;"> IEEE Transactions on Pattern Analysis and Machine Intelligence</p>
+    <p style="color: rgb(193, 38, 38); font-weight: bold; font-style: italic; margin: 5px 0;">IEEE TPAMI 2025</p>
     <p style="color: #666; margin: 5px 0; font-size: 0.9em;">Dingkang Liang<sup>*</sup>, <strong style="color: #000;">Tianrui Feng<sup>*</sup></strong>, Xin Zhou<sup>*</sup>, Yumeng Zhang, Zhikang Zou, Xiang Bai<sup>†</sup></p>
     <p style="margin: 10px 0;">A spectral domain perspective for point PEFT, very strong performance.</p>
     <div style="display:flex; gap:12px; align-items:center; margin-top:10px;">
