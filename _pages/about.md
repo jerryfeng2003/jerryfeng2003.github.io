@@ -11,7 +11,7 @@ About Me
 -----
 I am a senior undergraduate majoring in Artificial Intelligence at [Huazhong University of Science and Technology (HUST)](https://en.wikipedia.org/wiki/Huazhong_University_of_Science_and_Technology), and I expect to receive my B.Eng. degree in 2026.
 
-I am currently a student researcher at the [VLRLab](http://vlrlab.aia.hust.edu.cn/), advised by Prof. [Xiang Bai](https://scholar.google.com/citations?user=UeltiQ4AAAAJ&hl=en). Previously, I worked as a research intern at [BAIR](https://bair.berkeley.edu/) with Prof. [Chenfeng Xu](https://www.chenfengx.com/) during my visit to UC Berkeley.
+I am currently a student researcher at the [VLRLab](http://vlrlab.aia.hust.edu.cn/), advised by Prof. [Xiang Bai](https://scholar.google.com/citations?user=UeltiQ4AAAAJ&hl=en).
 
 My research interests include efficient machine learning and 3D computer vision. I hope to build AI technologies that expand human potential.
 
@@ -158,19 +158,6 @@ See full publication list on [Google Scholar ->](https://scholar.google.com/cita
 
 Research Experience
 ------
-
-<div style="display: grid; grid-template-columns: 1fr auto; gap: 15px; margin-bottom: 18px; align-items: start;">
-  <div>
-    <p style="margin: 0 0 2px 0; font-weight: bold;">BAIR, University of California, Berkeley</p>
-    <p style="margin: 0 0 2px 0; color: #666; font-style: italic; font-size: 0.9em;">Research Intern</p>
-    <ul style="margin: 8px 0 0 0; padding-left: 20px; font-size: 0.9em; color: #555;">
-      <li style="margin: 4px 0;"><strong>Advisor:</strong> <a href="https://www.chenfengx.com/" style="color: #1976d2; text-decoration: none;">Chenfeng Xu</a></li>
-      <li style="margin: 4px 0;"><strong>Research Topics:</strong> Efficient Machine Learning, Generative Models, AI Systems</li>
-    </ul>
-  </div>
-  <div style="text-align: right; white-space: nowrap; font-size: 0.9em; color: #666;">Jun 2025 - Aug 2025</div>
-</div>
-
 <div style="display: grid; grid-template-columns: 1fr auto; gap: 15px; margin-bottom: 30px; align-items: start;">
   <div>
     <p style="margin: 0 0 2px 0; font-weight: bold;">VLRLab, Huazhong University of Science and Technology (HUST)</p>
