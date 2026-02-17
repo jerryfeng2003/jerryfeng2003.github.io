@@ -32,7 +32,6 @@ Publications
       <a href="https://streamdiffusionv2.github.io/" title="Project" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fas fa-globe" aria-hidden="true"></i></a>
       <a href="https://arxiv.org/pdf/2511.07399" title="PDF" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fas fa-file-pdf" aria-hidden="true"></i></a>
       <img src="https://img.shields.io/github/stars/chenfengxu714/StreamDiffusionV2?style=social" />
-      </a>
     </div>
   </div>
 </div>
@@ -49,7 +48,6 @@ Publications
     <div style="display:flex; gap:12px; align-items:center; margin-top:10px;">
       <a href="https://arxiv.org/pdf/2410.08114" title="PDF" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fas fa-file-pdf" aria-hidden="true"></i></a>
       <img src="https://img.shields.io/github/stars/jerryfeng2003/PointGST?style=social" />
-      </a>
     </div>
   </div>
 </div>
