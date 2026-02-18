@@ -11,9 +11,9 @@ About Me
 -----
 I am an incoming Ph.D. student in Computer Science at The University of Texas at Austin, where I will be advised by Prof. [Chenfeng Xu](https://www.chenfengx.com/).
 
-Before that, I worked as a student researcher at [VLRLab](http://vlrlab.aia.hust.edu.cn/) under the supervision of Prof. [Xiang Bai](https://scholar.google.com/citations?user=UeltiQ4AAAAJ&hl=en) at Huazhong University of Science and Technology, where I majored in Artificial Intelligence and expect to receive my B.Eng. degree in June 2026.
+Before that, I worked as a student researcher at [VLRLab](http://vlrlab.aia.hust.edu.cn/) under the supervision of Prof. [Xiang Bai](https://scholar.google.com/citations?user=UeltiQ4AAAAJ&hl=en) at Huazhong University of Science and Technology, where I am pursuing my B.Eng. degree and expect to graduate in June 2026.
 
-My research interests lie in efficient machine learning and computer vision, with the goal of developing AI systems that expand human potential.
+My research interests lie in Machine Learning Systems and Generative Models, with the goal of developing AI systems that expand human potential.
 
 Publications
 ------
