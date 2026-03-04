@@ -14,6 +14,7 @@ I am an incoming Ph.D. student in Computer Science at The University of Texas at
 Before that, I worked as a student researcher at [VLRLab](http://vlrlab.aia.hust.edu.cn/) under the supervision of Prof. [Xiang Bai](https://scholar.google.com/citations?user=UeltiQ4AAAAJ&hl=en) at Huazhong University of Science and Technology, where I am pursuing my B.Eng. degree and expect to graduate in June 2026.
 
 My research interests lie in Machine Learning Systems and Generative Models, with the goal of developing AI systems that expand human potential.
+
 **<span style="color:rgb(227, 32, 32); font-weight: bold; font-style: italic; margin: 5px 0;">
 I am actively seeking industry internship opportunities. Feel free to reach out if there is a potential fit!
 </span>**
