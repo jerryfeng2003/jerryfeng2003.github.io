@@ -14,6 +14,9 @@ I am an incoming Ph.D. student in Computer Science at The University of Texas at
 Before that, I worked as a student researcher at [VLRLab](http://vlrlab.aia.hust.edu.cn/) under the supervision of Prof. [Xiang Bai](https://scholar.google.com/citations?user=UeltiQ4AAAAJ&hl=en) at Huazhong University of Science and Technology, where I am pursuing my B.Eng. degree and expect to graduate in June 2026.
 
 My research interests lie in Machine Learning Systems and Generative Models, with the goal of developing AI systems that expand human potential.
+**<span style="color:rgb(227, 32, 32); font-weight: bold; font-style: italic; margin: 5px 0;">
+I am actively seeking industry internship opportunities. Feel free to reach out if there is a potential fit!
+</span>**
 
 Publications
 ------
@@ -31,6 +34,7 @@ Publications
     <div style="display:flex; gap:12px; align-items:center; margin-top:10px;">
       <a href="https://streamdiffusionv2.github.io/" title="Project" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fas fa-globe" aria-hidden="true"></i></a>
       <a href="https://arxiv.org/pdf/2511.07399" title="PDF" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fas fa-file-pdf" aria-hidden="true"></i></a>
+      <a href="https://github.com/chenfengxu714/StreamDiffusionV2" class="github-link" data-repo="chenfengxu714/StreamDiffusionV2" title="GitHub" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fab fa-github" aria-hidden="true"></i> </a>
       <img src="https://img.shields.io/github/stars/chenfengxu714/StreamDiffusionV2?style=social" />
     </div>
   </div>
@@ -47,6 +51,7 @@ Publications
     <p style="margin: 10px 0;">A spectral domain perspective for point PEFT, very strong performance.</p>
     <div style="display:flex; gap:12px; align-items:center; margin-top:10px;">
       <a href="https://arxiv.org/pdf/2410.08114" title="PDF" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fas fa-file-pdf" aria-hidden="true"></i></a>
+      <a href="https://github.com/jerryfeng2003/PointGST" class="github-link" data-repo="chenfengxu714/StreamDiffusionV2" title="GitHub" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fab fa-github" aria-hidden="true"></i> </a>
       <img src="https://img.shields.io/github/stars/jerryfeng2003/PointGST?style=social" />
     </div>
   </div>
