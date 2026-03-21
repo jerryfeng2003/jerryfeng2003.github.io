@@ -2,211 +2,502 @@
 permalink: /
 title: ""
 author_profile: true
-redirect_from: 
+redirect_from:
   - /about/
   - /about.html
 ---
 
-About Me
------
-I am an incoming Ph.D. student in Computer Science at The University of Texas at Austin, where I will be advised by Prof. [Chenfeng Xu](https://www.chenfengx.com/).
+<nav class="section-nav" aria-label="Section navigation">
+  <a class="section-nav__link" href="#about">About</a>
+  <a class="section-nav__link" href="#publications">Publications</a>
+  <a class="section-nav__link" href="#experience">Experience</a>
+  <a class="section-nav__link" href="#honors">Honors</a>
+</nav>
 
-Before that, I worked as a student researcher at [VLRLab](http://vlrlab.aia.hust.edu.cn/) under the supervision of Prof. [Xiang Bai](https://scholar.google.com/citations?user=UeltiQ4AAAAJ&hl=en) at Huazhong University of Science and Technology, where I am pursuing my B.Eng. degree and expect to graduate in June 2026.
-
-My research interests lie in Machine Learning Systems and Generative Models, with the goal of developing AI systems that expand human potential.
-
-**<span style="color:rgb(227, 32, 32); font-weight: bold; font-style: italic; margin: 5px 0;">
-I am actively seeking industry internship opportunities. Feel free to reach out if there is a potential fit!
-</span>**
-
-Publications
-------
-<span style="font-size: 0.85em; color: #666;">* Equal Contribution, † Corresponding Author</span>
-
-<div class="publication-grid" style="display: grid; grid-template-columns: minmax(220px,320px) 1fr; gap: 20px; margin-bottom: 30px; align-items: start;">
-  <div class="publication-img" style="text-align: center; display:flex; align-items:center; justify-content:center;">
-    <img class="publication-thumb" src="/images/publications/streamdiffusionv2.gif" alt="StreamDiffusionV2" />
-  </div>
-  <div>
-    <h4 style="margin-top: 0;">StreamDiffusionV2: A Streaming System for Dynamic and Interactive Video Generation</h4>
-    <p style="color: rgb(227, 32, 32); font-weight: bold; font-style: italic; margin: 5px 0;"> MLSys 2026</p>
-    <p style="color: #666; margin: 5px 0; font-size: 0.9em;"><strong style="color: #000;">Tianrui Feng</strong>, Zhi Li, Shuo Yang, Haocheng Xi, Muyang Li, Xiuyu Li, Lvmin Zhang, Keting Yang, Kelly Peng, Song Han, Maneesh Agrawala, Kurt Keutzer, Akio Kodaira, Chenfeng Xu<sup>†</sup></p>
-    <p style="margin: 10px 0;">An open-source interactive streaming system for real-time diffusion generation.</p>
-    <div style="display:flex; gap:12px; align-items:center; margin-top:10px;">
-      <a href="https://streamdiffusionv2.github.io/" title="Project" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fas fa-globe" aria-hidden="true"></i></a>
-      <a href="https://arxiv.org/pdf/2511.07399" title="PDF" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fas fa-file-pdf" aria-hidden="true"></i></a>
-      <a href="https://github.com/chenfengxu714/StreamDiffusionV2" class="github-link" data-repo="chenfengxu714/StreamDiffusionV2" title="GitHub" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fab fa-github" aria-hidden="true"></i> </a>
-      <img src="https://img.shields.io/github/stars/chenfengxu714/StreamDiffusionV2?style=social" />
+<section class="home-section" id="about">
+  <h2>About Me</h2>
+  <div class="intro-card">
+    <p class="intro-card__lead">
+      I am an incoming Ph.D. student in Computer Science at The University of Texas at Austin, where I will be advised by Prof. <a href="https://www.chenfengx.com/">Chenfeng Xu</a>.
+    </p>
+    <p>
+      Before that, I worked as a student researcher at <a href="http://vlrlab.aia.hust.edu.cn/">VLRLab</a> under the supervision of Prof. <a href="https://scholar.google.com/citations?user=UeltiQ4AAAAJ&amp;hl=en">Xiang Bai</a> at Huazhong University of Science and Technology, where I am pursuing my B.Eng. degree and expect to graduate in June 2026.
+    </p>
+    <p>
+      My research interests lie in Machine Learning Systems and Generative Models, with the goal of developing AI systems that expand human potential.
+    </p>
+    <div class="interest-pills" aria-label="Research interests">
+      <span class="interest-pill">ML Systems</span>
+      <span class="interest-pill">Generative Models</span>
+      <span class="interest-pill">3D Vision</span>
+      <span class="interest-pill">Multimodal Learning</span>
     </div>
   </div>
-</div>
+  <p class="status-note">
+    I am actively seeking industry internship opportunities. Feel free to reach out if there is a potential fit.
+  </p>
+</section>
 
-<div class="publication-grid" style="display: grid; grid-template-columns: minmax(220px,320px) 1fr; gap: 20px; margin-bottom: 30px; align-items: start;">
-  <div class="publication-img" style="text-align: center; display:flex; align-items:center; justify-content:center;">
-    <img class="publication-thumb" src="/images/publications/pointgst.png" alt="PointGST" />
-  </div>
-  <div>
-    <h4 style="margin-top: 0;">Parameter-Efficient Fine-Tuning in Spectral Domain for Point Cloud Learning</h4>
-    <p style="color: rgb(227, 32, 32); font-weight: bold; font-style: italic; margin: 5px 0;">IEEE TPAMI 2025</p>
-    <p style="color: #666; margin: 5px 0; font-size: 0.9em;">Dingkang Liang<sup>*</sup>, <strong style="color: #000;">Tianrui Feng<sup>*</sup></strong>, Xin Zhou<sup>*</sup>, Yumeng Zhang, Zhikang Zou, Xiang Bai<sup>†</sup></p>
-    <p style="margin: 10px 0;">A spectral domain perspective for point PEFT, very strong performance.</p>
-    <div style="display:flex; gap:12px; align-items:center; margin-top:10px;">
-      <a href="https://arxiv.org/pdf/2410.08114" title="PDF" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fas fa-file-pdf" aria-hidden="true"></i></a>
-      <a href="https://github.com/jerryfeng2003/PointGST" class="github-link" data-repo="chenfengxu714/StreamDiffusionV2" title="GitHub" style="color: #1976d2; text-decoration: none; font-size: 0.95em;"><i class="fab fa-github" aria-hidden="true"></i> </a>
-      <img src="https://img.shields.io/github/stars/jerryfeng2003/PointGST?style=social" />
+<section class="home-section" id="publications">
+  <h2>Selected Publications</h2>
+  <p class="section-note">* Equal Contribution, † Corresponding Author</p>
+
+  <article class="publication-card">
+    <a class="publication-card__media" href="https://streamdiffusionv2.github.io/" aria-label="StreamDiffusionV2 project page">
+      <img class="publication-thumb" src="/images/publications/streamdiffusionv2.gif" alt="StreamDiffusionV2 preview" />
+    </a>
+    <div class="publication-card__body">
+      <p class="publication-card__venue">MLSys 2026</p>
+      <h3 class="publication-card__title">StreamDiffusionV2: A Streaming System for Dynamic and Interactive Video Generation</h3>
+      <p class="publication-card__authors">
+        <strong class="author-highlight">Tianrui Feng</strong>, Zhi Li, Shuo Yang, Haocheng Xi, Muyang Li, Xiuyu Li, Lvmin Zhang, Keting Yang, Kelly Peng, Song Han, Maneesh Agrawala, Kurt Keutzer, Akio Kodaira, Chenfeng Xu<sup>†</sup>
+      </p>
+      <p class="publication-card__summary">
+        An open-source interactive streaming system for real-time diffusion generation.
+      </p>
+      <div class="publication-card__links">
+        <a class="pub-link" href="https://streamdiffusionv2.github.io/">Project</a>
+        <a class="pub-link" href="https://arxiv.org/pdf/2511.07399">PDF</a>
+        <a class="pub-link" href="https://github.com/chenfengxu714/StreamDiffusionV2">GitHub</a>
+        <a class="pub-badge" href="https://github.com/chenfengxu714/StreamDiffusionV2" aria-label="StreamDiffusionV2 GitHub stars">
+          <img src="https://img.shields.io/github/stars/chenfengxu714/StreamDiffusionV2?style=social" alt="StreamDiffusionV2 GitHub stars" />
+        </a>
+      </div>
     </div>
-  </div>
-</div>
+  </article>
+
+  <article class="publication-card">
+    <a class="publication-card__media" href="https://github.com/jerryfeng2003/PointGST" aria-label="PointGST repository">
+      <img class="publication-thumb" src="/images/publications/pointgst.png" alt="PointGST preview" />
+    </a>
+    <div class="publication-card__body">
+      <p class="publication-card__venue">IEEE TPAMI 2025</p>
+      <h3 class="publication-card__title">Parameter-Efficient Fine-Tuning in Spectral Domain for Point Cloud Learning</h3>
+      <p class="publication-card__authors">
+        Dingkang Liang<sup>*</sup>, <strong class="author-highlight">Tianrui Feng<sup>*</sup></strong>, Xin Zhou<sup>*</sup>, Yumeng Zhang, Zhikang Zou, Xiang Bai<sup>†</sup>
+      </p>
+      <p class="publication-card__summary">
+        A spectral-domain perspective for parameter-efficient fine-tuning in point cloud learning with strong empirical performance.
+      </p>
+      <div class="publication-card__links">
+        <a class="pub-link" href="https://arxiv.org/pdf/2410.08114">PDF</a>
+        <a class="pub-link" href="https://github.com/jerryfeng2003/PointGST">GitHub</a>
+        <a class="pub-badge" href="https://github.com/jerryfeng2003/PointGST" aria-label="PointGST GitHub stars">
+          <img src="https://img.shields.io/github/stars/jerryfeng2003/PointGST?style=social" alt="PointGST GitHub stars" />
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <p class="section-link">
+    See the full publication list on <a href="https://scholar.google.com/citations?user=Dy-V-1IAAAAJ&amp;hl=en">Google Scholar</a>.
+  </p>
+</section>
+
+<section class="home-section" id="experience">
+  <h2>Research Experience</h2>
+  <article class="timeline-card">
+    <div class="timeline-card__body">
+      <h3 class="timeline-card__title">VLRLab, Huazhong University of Science and Technology (HUST)</h3>
+      <p class="timeline-card__subtitle">Research Intern</p>
+      <ul class="timeline-card__list">
+        <li><strong>Advisor:</strong> <a href="https://scholar.google.com/citations?user=UeltiQ4AAAAJ&amp;hl=en">Xiang Bai</a></li>
+        <li><strong>Research Topics:</strong> Efficient Machine Learning, 3D Vision, Generative Models, Multi-modality Learning</li>
+      </ul>
+    </div>
+    <p class="timeline-card__date">Jun 2023 - Current</p>
+  </article>
+</section>
+
+<section class="home-section" id="honors">
+  <h2>Honors and Awards</h2>
+
+  <article class="timeline-card timeline-card--compact">
+    <div class="timeline-card__body">
+      <h3 class="timeline-card__title">Undergraduate Natural Science Innovation Fund (~$7,000), Project Lead</h3>
+      <p class="timeline-card__meta">Huazhong University of Science and Technology</p>
+    </div>
+    <p class="timeline-card__date">Jun 2025</p>
+  </article>
+
+  <article class="timeline-card timeline-card--compact">
+    <div class="timeline-card__body">
+      <h3 class="timeline-card__title">National Undergraduate Innovation Training Program (~$2,800), Project Lead</h3>
+      <p class="timeline-card__meta">Huazhong University of Science and Technology</p>
+    </div>
+    <p class="timeline-card__date">May 2024</p>
+  </article>
+
+  <article class="timeline-card timeline-card--compact">
+    <div class="timeline-card__body">
+      <h3 class="timeline-card__title">National Scholarship (Top 0.2%)</h3>
+      <p class="timeline-card__meta">Huazhong University of Science and Technology</p>
+    </div>
+    <p class="timeline-card__date">Oct 2023</p>
+  </article>
+
+  <article class="timeline-card timeline-card--compact">
+    <div class="timeline-card__body">
+      <h3 class="timeline-card__title">ICCV 2023, CVPPA Workshop Challenge, Rank 6th</h3>
+      <p class="timeline-card__meta">International Conference on Computer Vision Workshop, 2023</p>
+    </div>
+    <p class="timeline-card__date">Aug 2023</p>
+  </article>
+</section>
 
 <style>
-.gh-stars{font-weight:600; margin-left:6px; color:#333; font-size:0.95em}
-.github-link i{margin-right:4px}
+#main {
+  max-width: 1320px;
+  padding-left: clamp(1rem, 2vw, 1.5rem);
+  padding-right: clamp(1rem, 2vw, 1.5rem);
+}
 
-/* Publication layout tweaks */
-.publication-grid { grid-auto-rows: auto; }
-.publication-img img { display:block; }
+html {
+  scroll-behavior: smooth;
+}
 
-/* Image container: use cover so images are visually uniform */
-.publication-img { width:320px; height:220px; overflow:hidden; border-radius:8px; position:relative; display:flex; align-items:center; justify-content:center; }
-.publication-img img.publication-thumb { width:100%; height:100%; object-fit:cover; object-position:center; }
+.page__content {
+  max-width: none;
+}
 
-/* Compact icon links (small, no heavy background) */
-a[title]{ color: #1976d2; text-decoration: none; font-size: 0.95em; }
+.section-nav {
+  position: sticky;
+  top: 5rem;
+  z-index: 8;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin: 0 0 1.6rem;
+  padding: 0.9rem 1rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(12px);
+  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
+}
 
-/* Widen the content column for this page and normalize typography to match resume style */
-.page__content { max-width: 980px; margin-left: auto; margin-right: auto; }
-.page__content h2 { font-size: 1.4rem !important; margin-top: 1.1em; }
-.page__content h3 { font-size: 1.15rem !important; margin-top: 1em; }
-.page__content h4 { font-size: 1.05rem !important; margin-top: 0.6em; }
-.page__content p, .page__content li, .page__content dd { font-size: 0.95rem !important; color: #333; line-height: 1.5; }
+.section-nav__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.48rem 0.88rem;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  color: var(--global-text-color);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
 
-/* Research/Honors grid helper classes (used below) */
-.research-grid, .honors-grid { display: grid; grid-template-columns: 1fr auto; gap: 15px; align-items: start; margin-bottom: 12px; }
-.research-grid .meta, .honors-grid .meta { text-align: right; white-space: nowrap; font-size: 0.9em; color: #666; }
+.section-nav__link:hover {
+  border-color: var(--global-border-color);
+  background: rgba(82, 173, 200, 0.1);
+  color: var(--global-link-color);
+}
+
+.page__content p,
+.page__content li,
+.page__content dd {
+  color: var(--global-text-color);
+  line-height: 1.7;
+}
+
+.home-section[id] {
+  scroll-margin-top: 7rem;
+}
+
+.page__content > .home-section:first-child {
+  margin-top: 0.25rem;
+}
+
+.home-section {
+  margin-bottom: 3rem;
+}
+
+.home-section:last-child {
+  margin-bottom: 1rem;
+}
+
+.home-section h2 {
+  margin-bottom: 1.25rem;
+  font-size: 1.5rem;
+}
+
+.intro-card,
+.publication-card,
+.timeline-card {
+  border: 1px solid var(--global-border-color);
+  border-radius: 20px;
+  background: var(--global-bg-color);
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+}
+
+.intro-card {
+  padding: 1.5rem 1.6rem;
+}
+
+.intro-card__lead {
+  margin-top: 0;
+  font-size: 1.06rem;
+}
+
+.interest-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 1.15rem;
+}
+
+.interest-pill {
+  padding: 0.42rem 0.8rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 999px;
+  background: rgba(82, 173, 200, 0.08);
+  color: var(--global-text-color);
+  font-size: 0.88rem;
+  font-weight: 600;
+}
+
+.status-note {
+  margin: 1rem 0 0;
+  padding: 0.95rem 1.1rem;
+  border-left: 4px solid #d64933;
+  border-radius: 0 14px 14px 0;
+  background: rgba(214, 73, 51, 0.08);
+  color: var(--global-text-color);
+  font-style: italic;
+  font-weight: 600;
+}
+
+.section-note,
+.section-link,
+.timeline-card__subtitle,
+.timeline-card__meta,
+.publication-card__authors {
+  color: var(--global-text-color-light);
+}
+
+.section-note,
+.section-link {
+  margin: 0 0 1rem;
+  font-size: 0.92rem;
+}
+
+.publication-card {
+  display: grid;
+  grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
+  gap: 1.4rem;
+  align-items: start;
+  margin-bottom: 1.4rem;
+  padding: 1.2rem;
+}
+
+.publication-card__media {
+  display: flex;
+  min-height: 220px;
+  overflow: hidden;
+  border-radius: 16px;
+  background: rgba(82, 173, 200, 0.08);
+}
+
+.publication-card__media:hover img {
+  transform: scale(1.02);
+}
+
+.publication-thumb {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.25s ease;
+}
+
+.publication-card__body {
+  min-width: 0;
+}
+
+.publication-card__venue {
+  margin: 0 0 0.45rem;
+  color: #d64933;
+  font-size: 0.88rem;
+  font-style: italic;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.publication-card__title {
+  margin: 0 0 0.55rem;
+  font-size: 1.18rem;
+  line-height: 1.35;
+}
+
+.publication-card__authors {
+  margin: 0 0 0.7rem;
+  font-size: 0.95rem;
+}
+
+.author-highlight {
+  color: var(--global-text-color);
+}
+
+.publication-card__summary {
+  margin: 0;
+}
+
+.publication-card__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.pub-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 999px;
+  color: var(--global-link-color);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.pub-link:hover {
+  border-color: var(--global-link-color);
+  background: rgba(82, 173, 200, 0.08);
+  transform: translateY(-1px);
+}
+
+.pub-badge {
+  display: inline-flex;
+  align-items: center;
+}
+
+.pub-badge img {
+  display: block;
+}
+
+.timeline-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: start;
+  margin-bottom: 1rem;
+  padding: 1.25rem 1.35rem;
+}
+
+.timeline-card--compact {
+  padding-top: 1.05rem;
+  padding-bottom: 1.05rem;
+}
+
+.timeline-card__title {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.timeline-card__subtitle,
+.timeline-card__meta {
+  margin: 0.2rem 0 0;
+  font-size: 0.92rem;
+}
+
+.timeline-card__list {
+  margin: 0.85rem 0 0;
+  padding-left: 1.15rem;
+}
+
+.timeline-card__list li + li {
+  margin-top: 0.35rem;
+}
+
+.timeline-card__date {
+  margin: 0;
+  white-space: nowrap;
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+  #main {
+    display: grid;
+    grid-template-columns: minmax(220px, 260px) minmax(0, 940px);
+    gap: clamp(2rem, 4vw, 4rem);
+    align-items: start;
+    justify-content: center;
+  }
+
+  #main > .sidebar {
+    position: sticky;
+    top: 5.75rem;
+    height: auto;
+    overflow: visible;
+    margin: 0;
+    padding-top: 0;
+    max-width: none;
+    float: none;
+  }
+
+  #main > .page {
+    width: auto;
+    margin: 0;
+    float: none;
+  }
+}
 
 @media (max-width: 900px) {
-  .publication-grid { grid-template-columns: 1fr !important; }
-  .publication-img { width: 100%; height: 200px; }
-  .page__content { padding: 0 1rem; max-width: 100%; }
+  .publication-card,
+  .timeline-card {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-card__media {
+    min-height: 210px;
+  }
+
+  .timeline-card__date {
+    white-space: normal;
+  }
+
+  .section-nav {
+    top: 4.5rem;
+    margin-bottom: 1.25rem;
+    padding: 0.8rem 0.85rem;
+  }
+}
+
+html[data-theme="dark"] .section-nav {
+  background: rgba(71, 71, 71, 0.88);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.24);
+}
+
+html[data-theme="dark"] .intro-card,
+html[data-theme="dark"] .publication-card,
+html[data-theme="dark"] .timeline-card {
+  background: #525252;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24);
+}
+
+html[data-theme="dark"] .interest-pill,
+html[data-theme="dark"] .pub-link:hover,
+html[data-theme="dark"] .publication-card__media {
+  background: rgba(14, 161, 197, 0.14);
+}
+
+html[data-theme="dark"] .status-note {
+  background: rgba(255, 138, 122, 0.12);
+  border-left-color: #ff8a7a;
+}
+
+html[data-theme="dark"] .publication-card__venue {
+  color: #ff8a7a;
 }
 </style>
-
-<script>
-/*
-  Robust GitHub star fetcher with localStorage caching.
-  - Caches results 6 hours to avoid hitting unauthenticated rate limits
-  - Fills all elements with class 'gh-stars' (reads data-repo attribute)
-  - Falls back to a stale cached value or '–' on errors
-*/
-(async function(){
-  function cacheGet(key, maxAgeMs){
-    try{
-      const raw = localStorage.getItem(key);
-      if(!raw) return null;
-      const obj = JSON.parse(raw);
-      if(Date.now() - obj.t > maxAgeMs) { localStorage.removeItem(key); return null; }
-      return obj.v;
-    }catch(e){ return null; }
-  }
-  function cacheSet(key, value){
-    try{ localStorage.setItem(key, JSON.stringify({t: Date.now(), v: value})); }catch(e){}
-  }
-
-  async function fetchStars(repo){
-    const cacheKey = 'ghstars:' + repo;
-    const cached = cacheGet(cacheKey, 1000*60*60*6); // 6 hours
-    if(cached !== null) return cached;
-    try{
-      const res = await fetch('https://api.github.com/repos/' + repo, {headers:{'Accept':'application/vnd.github.v3+json'}});
-      if(!res.ok) {
-        const stale = cacheGet(cacheKey, Number.MAX_SAFE_INTEGER);
-        return stale !== null ? stale : '–';
-      }
-      const j = await res.json();
-      const count = (j.stargazers_count || 0).toLocaleString();
-      cacheSet(cacheKey, count);
-      return count;
-    }catch(e){
-      const stale = cacheGet(cacheKey, Number.MAX_SAFE_INTEGER);
-      return stale !== null ? stale : '–';
-    }
-  }
-
-  function render(el, text){ if(!el) return; el.textContent = '★ ' + text; }
-
-  function run(){
-    const els = document.querySelectorAll('.gh-stars');
-    if(!els || els.length === 0) return;
-    const repoMap = {};
-    els.forEach(el => {
-      const repo = el.dataset.repo;
-      if(repo) {
-        if(!repoMap[repo]) repoMap[repo] = [];
-        repoMap[repo].push(el);
-      }
-    });
-    Object.keys(repoMap).forEach(async repo => {
-      repoMap[repo].forEach(el => { el.textContent = '★ …'; });
-      const count = await fetchStars(repo);
-      repoMap[repo].forEach(el => render(el, count));
-    });
-  }
-
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', run);
-  } else {
-    run();
-  }
-})();
-</script>
-
-See full publication list on [Google Scholar ->](https://scholar.google.com/citations?user=Dy-V-1IAAAAJ&hl=en)
-
-Research Experience
-------
-<div style="display: grid; grid-template-columns: 1fr auto; gap: 15px; margin-bottom: 30px; align-items: start;">
-  <div>
-    <p style="margin: 0 0 2px 0; font-weight: bold;">VLRLab, Huazhong University of Science and Technology (HUST)</p>
-    <p style="margin: 0 0 2px 0; color: #666; font-style: italic; font-size: 0.9em;">Research Intern</p>
-    <ul style="margin: 8px 0 0 0; padding-left: 20px; font-size: 0.9em; color: #555;">
-      <li style="margin: 4px 0;"><strong>Advisor:</strong> <a href="https://scholar.google.com/citations?user=UeltiQ4AAAAJ&hl=en" style="color: #1976d2; text-decoration: none;">Xiang Bai</a></li>
-      <li style="margin: 4px 0;"><strong>Research Topics:</strong> Efficient Machine Learning, 3D Vision, Generative Models, Multi-modality Learning</li>
-    </ul>
-  </div>
-  <div style="text-align: right; white-space: nowrap; font-size: 0.9em; color: #666;">Jun 2023 - Current</div>
-</div>
-
-Honors and Awards
-------
-
-<div style="display: grid; grid-template-columns: 1fr auto; gap: 15px; margin-bottom: 12px; align-items: start;">
-  <div>
-    <p style="margin: 0 0 2px 0; font-weight: bold;">Undergraduate Natural Science Innovation Fund (~$7,000), Project Lead</p>
-    <p style="margin: 0; color: #666; font-size: 0.9em;">Huazhong University of Science and Technology</p>
-  </div>
-  <div style="text-align: right; white-space: nowrap; font-size: 0.9em; color: #666;">Jun 2025</div>
-</div>
-
-<div style="display: grid; grid-template-columns: 1fr auto; gap: 15px; margin-bottom: 12px; align-items: start;">
-  <div>
-    <p style="margin: 0 0 2px 0; font-weight: bold;">National Undergraduate Innovation Training Program (~$2,800), Project Lead</p>
-    <p style="margin: 0; color: #666; font-size: 0.9em;">Huazhong University of Science and Technology</p>
-  </div>
-  <div style="text-align: right; white-space: nowrap; font-size: 0.9em; color: #666;">May 2024</div>
-</div>
-
-<div style="display: grid; grid-template-columns: 1fr auto; gap: 15px; margin-bottom: 12px; align-items: start;">
-  <div>
-    <p style="margin: 0 0 2px 0; font-weight: bold;">National Scholarship (Top 0.2%)</p>
-    <p style="margin: 0; color: #666; font-size: 0.9em;">Huazhong University of Science and Technology</p>
-  </div>
-  <div style="text-align: right; white-space: nowrap; font-size: 0.9em; color: #666;">Oct 2023</div>
-</div>
-
-<div style="display: grid; grid-template-columns: 1fr auto; gap: 15px; margin-bottom: 30px; align-items: start;">
-  <div>
-    <p style="margin: 0 0 2px 0; font-weight: bold;">ICCV 2023, CVPPA Workshop Challenge, Rank 6th</p>
-    <p style="margin: 0; color: #666; font-size: 0.9em;">International Conference on Computer Vision Workshop, 2023</p>
-  </div>
-  <div style="text-align: right; white-space: nowrap; font-size: 0.9em; color: #666;">Aug 2023</div>
-</div>

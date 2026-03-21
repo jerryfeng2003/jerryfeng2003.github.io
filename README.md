@@ -20,6 +20,35 @@ See more info at https://academicpages.github.io/
 When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
 
 1. Clone the repository and made updates as detailed above.
+1. From the repository root, run:
+   ```bash
+   ./scripts/dev.sh
+   ```
+   Then open `http://127.0.0.1:4000` in your browser.
+
+### Quick start for this repo
+
+This repository now includes a local preview script that keeps Ruby gems inside the project and starts the Jekyll dev server for you:
+
+```bash
+./scripts/dev.sh
+```
+
+On macOS, do not use the system Ruby that ships with the OS if it is still `2.6.x`. This site should be run with Ruby `3.0+`, preferably a Homebrew-installed Ruby.
+
+Useful options:
+
+```bash
+JEKYLL_PORT=4001 ./scripts/dev.sh
+JEKYLL_HOST=0.0.0.0 ./scripts/dev.sh
+JEKYLL_LIVERELOAD=0 ./scripts/dev.sh
+```
+
+The script will:
+
+1. Check that `ruby` and `bundle` are installed.
+1. Install missing gems into `vendor/bundle`.
+1. Start `bundle exec jekyll serve` on port `4000` by default.
 
 ### Using a different IDE
 1. Make sure you have ruby-dev, bundler, and nodejs installed
