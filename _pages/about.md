@@ -8,14 +8,14 @@ redirect_from:
 ---
 
 <nav class="section-nav" aria-label="Section navigation">
-  <a class="section-nav__link" href="#about">About</a>
-  <a class="section-nav__link" href="#publications">Publications</a>
-  <a class="section-nav__link" href="#experience">Experience</a>
-  <a class="section-nav__link" href="#honors">Honors</a>
+  <a class="section-nav__link" href="#about-title">About</a>
+  <a class="section-nav__link" href="#publications-title">Publications</a>
+  <a class="section-nav__link" href="#experience-title">Experience</a>
+  <a class="section-nav__link" href="#honors-title">Honors</a>
 </nav>
 
-<section class="home-section" id="about">
-  <h2>About Me</h2>
+<section class="home-section">
+  <h2 class="home-section__title" id="about-title">About Me</h2>
   <div class="intro-card">
     <p class="intro-card__lead">
       I am an incoming Ph.D. student in Computer Science at The University of Texas at Austin, where I will be advised by Prof. <a href="https://www.chenfengx.com/">Chenfeng Xu</a>.
@@ -38,8 +38,8 @@ redirect_from:
   </p>
 </section>
 
-<section class="home-section" id="publications">
-  <h2>Selected Publications</h2>
+<section class="home-section">
+  <h2 class="home-section__title" id="publications-title">Selected Publications</h2>
   <p class="section-note">* Equal Contribution, † Corresponding Author</p>
 
   <article class="publication-card">
@@ -94,8 +94,8 @@ redirect_from:
   </p>
 </section>
 
-<section class="home-section" id="experience">
-  <h2>Research Experience</h2>
+<section class="home-section">
+  <h2 class="home-section__title" id="experience-title">Research Experience</h2>
   <article class="timeline-card">
     <div class="timeline-card__body">
       <h3 class="timeline-card__title">VLRLab, Huazhong University of Science and Technology (HUST)</h3>
@@ -109,8 +109,8 @@ redirect_from:
   </article>
 </section>
 
-<section class="home-section" id="honors">
-  <h2>Honors and Awards</h2>
+<section class="home-section">
+  <h2 class="home-section__title" id="honors-title">Honors and Awards</h2>
 
   <article class="timeline-card timeline-card--compact">
     <div class="timeline-card__body">
@@ -147,9 +147,9 @@ redirect_from:
 
 <style>
 #main {
-  max-width: 1320px;
-  padding-left: clamp(1rem, 2vw, 1.5rem);
-  padding-right: clamp(1rem, 2vw, 1.5rem);
+  max-width: 1680px;
+  padding-left: clamp(1.1rem, 2.4vw, 2rem);
+  padding-right: clamp(1.1rem, 2.4vw, 2rem);
 }
 
 html {
@@ -203,10 +203,6 @@ html {
   line-height: 1.7;
 }
 
-.home-section[id] {
-  scroll-margin-top: 7rem;
-}
-
 .page__content > .home-section:first-child {
   margin-top: 0.25rem;
 }
@@ -219,9 +215,10 @@ html {
   margin-bottom: 1rem;
 }
 
-.home-section h2 {
+.home-section__title {
   margin-bottom: 1.25rem;
   font-size: 1.5rem;
+  scroll-margin-top: 8.9rem;
 }
 
 .intro-card,
@@ -429,8 +426,8 @@ html {
 @media (min-width: 1024px) {
   #main {
     display: grid;
-    grid-template-columns: minmax(220px, 260px) minmax(0, 940px);
-    gap: clamp(2rem, 4vw, 4rem);
+    grid-template-columns: minmax(280px, 340px) minmax(0, 1180px);
+    gap: clamp(2.5rem, 4vw, 5rem);
     align-items: start;
     justify-content: center;
   }
@@ -438,12 +435,34 @@ html {
   #main > .sidebar {
     position: sticky;
     top: 5.75rem;
+    width: 100%;
     height: auto;
     overflow: visible;
     margin: 0;
     padding-top: 0;
     max-width: none;
     float: none;
+  }
+
+  #main > .sidebar .author__avatar img {
+    width: min(100%, 228px);
+    max-width: 228px;
+  }
+
+  #main > .sidebar .author__content,
+  #main > .sidebar .author__urls-wrapper,
+  #main > .sidebar .author__urls {
+    max-width: none;
+  }
+
+  #main > .sidebar .author__name {
+    font-size: 1.15rem;
+  }
+
+  #main > .sidebar .author__bio,
+  #main > .sidebar li,
+  #main > .sidebar p {
+    font-size: 0.92rem;
   }
 
   #main > .page {
@@ -471,6 +490,10 @@ html {
     top: 4.5rem;
     margin-bottom: 1.25rem;
     padding: 0.8rem 0.85rem;
+  }
+
+  .home-section__title {
+    scroll-margin-top: 8rem;
   }
 }
 
