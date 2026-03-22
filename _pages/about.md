@@ -426,7 +426,7 @@ html {
 @media (min-width: 1024px) {
   #main {
     display: grid;
-    grid-template-columns: minmax(280px, 340px) minmax(0, 1180px);
+    grid-template-columns: minmax(250px, 290px) minmax(0, 1260px);
     gap: clamp(2.5rem, 4vw, 5rem);
     align-items: start;
     justify-content: center;
@@ -445,8 +445,8 @@ html {
   }
 
   #main > .sidebar .author__avatar img {
-    width: min(100%, 228px);
-    max-width: 228px;
+    width: min(100%, 208px);
+    max-width: 208px;
   }
 
   #main > .sidebar .author__content,

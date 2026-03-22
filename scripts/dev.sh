@@ -39,6 +39,19 @@ if ! ruby -e 'exit Gem::Version.new(RUBY_VERSION) >= Gem::Version.new("3.0.0") ?
   exit 1
 fi
 
+if ruby -e 'exit Gem::Version.new(RUBY_VERSION) >= Gem::Version.new("4.0.0") ? 0 : 1'; then
+  echo "Ruby $RUBY_VERSION is too new for this repository's current GitHub Pages/Jekyll stack."
+  echo "Use Ruby 3.2.x or 3.3.x instead."
+  echo "Recommended on macOS with rbenv:"
+  echo '  brew install rbenv ruby-build'
+  echo '  echo '\''eval "$(rbenv init - zsh)"'\'' >> ~/.zshrc'
+  echo '  source ~/.zshrc'
+  echo '  rbenv install 3.2.9'
+  echo '  rbenv local 3.2.9'
+  echo '  gem install bundler'
+  exit 1
+fi
+
 mkdir -p "$BUNDLE_APP_CONFIG" "$BUNDLE_PATH"
 
 if ! bundle check >/dev/null 2>&1; then

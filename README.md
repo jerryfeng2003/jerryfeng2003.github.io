@@ -34,7 +34,7 @@ This repository now includes a local preview script that keeps Ruby gems inside 
 ./scripts/dev.sh
 ```
 
-On macOS, do not use the system Ruby that ships with the OS if it is still `2.6.x`. This site should be run with Ruby `3.0+`, preferably a Homebrew-installed Ruby.
+On macOS, do not use the system Ruby that ships with the OS if it is still `2.6.x`. For this repository, use Ruby `3.2.x` or `3.3.x`. Avoid Ruby `4.x` with the current GitHub Pages / Jekyll dependency stack.
 
 Useful options:
 
