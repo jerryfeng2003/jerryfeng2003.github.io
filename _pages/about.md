@@ -302,7 +302,7 @@ html {
 .page__content .publication-card__venue {
   margin: 0 0 0.45rem;
   color: #d64933;
-  font-size: 1.18rem;
+  font-size: 1.0rem;
   font-style: italic;
   font-weight: 700;
   letter-spacing: 0.01em;
