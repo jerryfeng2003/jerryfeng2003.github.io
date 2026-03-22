@@ -7,12 +7,15 @@ cd "$ROOT_DIR"
 
 HOST="${JEKYLL_HOST:-127.0.0.1}"
 PORT="${JEKYLL_PORT:-4000}"
-LIVERELOAD="${JEKYLL_LIVERELOAD:-1}"
+LIVERELOAD="${JEKYLL_LIVERELOAD:-0}"
+USE_VENDOR_BUNDLE="${JEKYLL_USE_VENDOR_BUNDLE:-0}"
 
 export BUNDLE_GEMFILE="$ROOT_DIR/Gemfile"
 export BUNDLE_APP_CONFIG="${BUNDLE_APP_CONFIG:-$ROOT_DIR/.bundle}"
-export BUNDLE_USER_HOME="${BUNDLE_USER_HOME:-$ROOT_DIR/.bundle}"
-export BUNDLE_PATH="${BUNDLE_PATH:-$ROOT_DIR/vendor/bundle}"
+
+if [[ "$USE_VENDOR_BUNDLE" == "1" ]]; then
+  export BUNDLE_PATH="${BUNDLE_PATH:-$ROOT_DIR/vendor/bundle}"
+fi
 
 require_command() {
   local cmd="$1"
@@ -52,10 +55,18 @@ if ruby -e 'exit Gem::Version.new(RUBY_VERSION) >= Gem::Version.new("4.0.0") ? 0
   exit 1
 fi
 
-mkdir -p "$BUNDLE_APP_CONFIG" "$BUNDLE_PATH"
+mkdir -p "$BUNDLE_APP_CONFIG"
+
+if [[ "$USE_VENDOR_BUNDLE" == "1" ]]; then
+  mkdir -p "$BUNDLE_PATH"
+fi
 
 if ! bundle check >/dev/null 2>&1; then
-  echo "Installing Ruby gems into $BUNDLE_PATH ..."
+  if [[ "$USE_VENDOR_BUNDLE" == "1" ]]; then
+    echo "Installing Ruby gems into $BUNDLE_PATH ..."
+  else
+    echo "Installing Ruby gems for the current Ruby environment ..."
+  fi
   bundle install
 fi
 

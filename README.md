@@ -1,125 +1,88 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# Tianrui Feng's Homepage
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+This repository contains the source code for my personal academic homepage built with Jekyll and GitHub Pages.
 
-# Getting Started
+## Local Preview
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your public repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+Recommended environment on macOS:
 
-See more info at https://academicpages.github.io/
+```bash
+brew install rbenv ruby-build
+echo 'eval "$(rbenv init - zsh)"' >> ~/.zshrc
+source ~/.zshrc
+rbenv install 3.2.9
+rbenv local 3.2.9
+gem install bundler
+bundle install
+```
 
-## Running locally
-
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
-
-1. Clone the repository and made updates as detailed above.
-1. From the repository root, run:
-   ```bash
-   ./scripts/dev.sh
-   ```
-   Then open `http://127.0.0.1:4000` in your browser.
-
-### Quick start for this repo
-
-This repository now includes a local preview script that keeps Ruby gems inside the project and starts the Jekyll dev server for you:
+Start the local site:
 
 ```bash
 ./scripts/dev.sh
 ```
 
-On macOS, do not use the system Ruby that ships with the OS if it is still `2.6.x`. For this repository, use Ruby `3.2.x` or `3.3.x`. Avoid Ruby `4.x` with the current GitHub Pages / Jekyll dependency stack.
+Open:
+
+```bash
+http://127.0.0.1:4000/
+```
 
 Useful options:
 
 ```bash
 JEKYLL_PORT=4001 ./scripts/dev.sh
 JEKYLL_HOST=0.0.0.0 ./scripts/dev.sh
-JEKYLL_LIVERELOAD=0 ./scripts/dev.sh
+JEKYLL_LIVERELOAD=1 ./scripts/dev.sh
+JEKYLL_USE_VENDOR_BUNDLE=1 ./scripts/dev.sh
 ```
 
-The script will:
+Notes:
 
-1. Check that `ruby` and `bundle` are installed.
-1. Install missing gems into `vendor/bundle`.
-1. Start `bundle exec jekyll serve` on port `4000` by default.
+1. Use Ruby `3.2.x` or `3.3.x`. Avoid Ruby `4.x` for this repo's current GitHub Pages dependency stack.
+1. By default `./scripts/dev.sh` uses gems from the active Ruby environment, which is the simplest setup with `rbenv`.
+1. If you want to keep gems inside the repo, set `JEKYLL_USE_VENDOR_BUNDLE=1`.
 
-### Using a different IDE
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
+## Layout Tuning
 
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
+The homepage width is mainly controlled in [_pages/about.md](/Users/tianruifeng/Documents/GitHub/jerryfeng2003.github.io/_pages/about.md).
 
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and `.bundle`.
+Key places to edit:
 
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
+1. `#main { max-width: ... }`
+   This controls the overall maximum width of the homepage layout.
+1. `@media (min-width: 1024px) { #main { grid-template-columns: ... } }`
+   The first column is the left profile sidebar width.
+   The second column is the main content width.
+1. `#main > .sidebar .author__avatar img { width: ... }`
+   This controls the avatar size in the left column.
 
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
+Example:
 
-## Using Docker
+```css
+#main {
+  max-width: 1820px;
+}
 
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-You can build and execute the container by running the following command in the repository:
-
-```bash
-chmod -R 777 .
-docker compose up
+@media (min-width: 1024px) {
+  #main {
+    grid-template-columns: minmax(235px, 270px) minmax(0, 1385px);
+  }
+}
 ```
 
-You should now be able to access the website from `localhost:4000`.
+If you want the main content wider:
 
-### Using the DevContainer in VS Code
+1. Increase the second value in `grid-template-columns`.
+1. Optionally increase `#main max-width` as well.
 
-If you are using [Visual Studio Code](https://code.visualstudio.com/) you can use the [Dev Container](https://code.visualstudio.com/docs/devcontainers/containers) that comes with this Repository. Normally VS Code detects that a development coontainer configuration is available and asks you if you want to use the container. If this doesn't happen you can manually start the container by **F1->DevContainer: Reopen in Container**. This restarts your VS Code in the container and automatically hosts your academic page locally on http://localhost:4000. All changes will be updated live to that page after a few seconds.
+If you want the left profile column wider:
 
-# Maintenance
+1. Increase the first value in `grid-template-columns`.
+1. Optionally enlarge the avatar width rule.
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+## Main Files
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
-
-## Bugfixes and enhancements
-
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
-
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
-
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
-
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+1. [_pages/about.md](/Users/tianruifeng/Documents/GitHub/jerryfeng2003.github.io/_pages/about.md): homepage content and homepage-specific styling.
+1. [_includes/masthead.html](/Users/tianruifeng/Documents/GitHub/jerryfeng2003.github.io/_includes/masthead.html): top navigation bar.
+1. [scripts/dev.sh](/Users/tianruifeng/Documents/GitHub/jerryfeng2003.github.io/scripts/dev.sh): local development entrypoint.

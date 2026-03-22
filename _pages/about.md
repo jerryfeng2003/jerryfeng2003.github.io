@@ -7,13 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-<nav class="section-nav" aria-label="Section navigation">
-  <a class="section-nav__link" href="#about-title">About</a>
-  <a class="section-nav__link" href="#publications-title">Publications</a>
-  <a class="section-nav__link" href="#experience-title">Experience</a>
-  <a class="section-nav__link" href="#honors-title">Honors</a>
-</nav>
-
 <section class="home-section">
   <h2 class="home-section__title" id="about-title">About Me</h2>
   <div class="intro-card">
@@ -43,9 +36,20 @@ redirect_from:
   <p class="section-note">* Equal Contribution, † Corresponding Author</p>
 
   <article class="publication-card">
-    <a class="publication-card__media" href="https://streamdiffusionv2.github.io/" aria-label="StreamDiffusionV2 project page">
-      <img class="publication-thumb" src="/images/publications/streamdiffusionv2.gif" alt="StreamDiffusionV2 preview" />
-    </a>
+    <div class="publication-card__asset">
+      <a class="publication-card__media" href="https://streamdiffusionv2.github.io/" aria-label="StreamDiffusionV2 project page">
+        <img class="publication-thumb" src="/images/publications/streamdiffusionv2.gif" alt="StreamDiffusionV2 preview" />
+      </a>
+      <div class="publication-card__links publication-card__links--aside">
+        <a class="pub-link" href="https://streamdiffusionv2.github.io/">Project</a>
+        <a class="pub-link" href="https://arxiv.org/pdf/2511.07399">PDF</a>
+        <a class="pub-link pub-link--github" href="https://github.com/chenfengxu714/StreamDiffusionV2">
+          <i class="fab fa-github" aria-hidden="true"></i>
+          <span>GitHub</span>
+          <span class="gh-star-count" data-repo="chenfengxu714/StreamDiffusionV2">...</span>
+        </a>
+      </div>
+    </div>
     <div class="publication-card__body">
       <p class="publication-card__venue">MLSys 2026</p>
       <h3 class="publication-card__title">StreamDiffusionV2: A Streaming System for Dynamic and Interactive Video Generation</h3>
@@ -55,21 +59,23 @@ redirect_from:
       <p class="publication-card__summary">
         An open-source interactive streaming system for real-time diffusion generation.
       </p>
-      <div class="publication-card__links">
-        <a class="pub-link" href="https://streamdiffusionv2.github.io/">Project</a>
-        <a class="pub-link" href="https://arxiv.org/pdf/2511.07399">PDF</a>
-        <a class="pub-link" href="https://github.com/chenfengxu714/StreamDiffusionV2">GitHub</a>
-        <a class="pub-badge" href="https://github.com/chenfengxu714/StreamDiffusionV2" aria-label="StreamDiffusionV2 GitHub stars">
-          <img src="https://img.shields.io/github/stars/chenfengxu714/StreamDiffusionV2?style=social" alt="StreamDiffusionV2 GitHub stars" />
-        </a>
-      </div>
     </div>
   </article>
 
   <article class="publication-card">
-    <a class="publication-card__media" href="https://github.com/jerryfeng2003/PointGST" aria-label="PointGST repository">
-      <img class="publication-thumb" src="/images/publications/pointgst.png" alt="PointGST preview" />
-    </a>
+    <div class="publication-card__asset">
+      <a class="publication-card__media" href="https://github.com/jerryfeng2003/PointGST" aria-label="PointGST repository">
+        <img class="publication-thumb" src="/images/publications/pointgst.png" alt="PointGST preview" />
+      </a>
+      <div class="publication-card__links publication-card__links--aside">
+        <a class="pub-link" href="https://arxiv.org/pdf/2410.08114">PDF</a>
+        <a class="pub-link pub-link--github" href="https://github.com/jerryfeng2003/PointGST">
+          <i class="fab fa-github" aria-hidden="true"></i>
+          <span>GitHub</span>
+          <span class="gh-star-count" data-repo="jerryfeng2003/PointGST">...</span>
+        </a>
+      </div>
+    </div>
     <div class="publication-card__body">
       <p class="publication-card__venue">IEEE TPAMI 2025</p>
       <h3 class="publication-card__title">Parameter-Efficient Fine-Tuning in Spectral Domain for Point Cloud Learning</h3>
@@ -79,13 +85,6 @@ redirect_from:
       <p class="publication-card__summary">
         A spectral-domain perspective for parameter-efficient fine-tuning in point cloud learning with strong empirical performance.
       </p>
-      <div class="publication-card__links">
-        <a class="pub-link" href="https://arxiv.org/pdf/2410.08114">PDF</a>
-        <a class="pub-link" href="https://github.com/jerryfeng2003/PointGST">GitHub</a>
-        <a class="pub-badge" href="https://github.com/jerryfeng2003/PointGST" aria-label="PointGST GitHub stars">
-          <img src="https://img.shields.io/github/stars/jerryfeng2003/PointGST?style=social" alt="PointGST GitHub stars" />
-        </a>
-      </div>
     </div>
   </article>
 
@@ -146,8 +145,18 @@ redirect_from:
 </section>
 
 <style>
+body {
+  padding-bottom: 1.8em;
+}
+
+.page__footer {
+  margin-top: 0.6em;
+}
+
 #main {
-  max-width: 1680px;
+  max-width: 2140px;
+  margin-top: 0.5rem;
+  margin-bottom: 0.2rem;
   padding-left: clamp(1.1rem, 2.4vw, 2rem);
   padding-right: clamp(1.1rem, 2.4vw, 2rem);
 }
@@ -160,42 +169,6 @@ html {
   max-width: none;
 }
 
-.section-nav {
-  position: sticky;
-  top: 5rem;
-  z-index: 8;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.7rem;
-  margin: 0 0 1.6rem;
-  padding: 0.9rem 1rem;
-  border: 1px solid var(--global-border-color);
-  border-radius: 18px;
-  background: rgba(255, 255, 255, 0.82);
-  backdrop-filter: blur(12px);
-  box-shadow: 0 14px 34px rgba(15, 23, 42, 0.08);
-}
-
-.section-nav__link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.48rem 0.88rem;
-  border: 1px solid transparent;
-  border-radius: 999px;
-  color: var(--global-text-color);
-  font-size: 0.92rem;
-  font-weight: 600;
-  text-decoration: none !important;
-  transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
-}
-
-.section-nav__link:hover {
-  border-color: var(--global-border-color);
-  background: rgba(82, 173, 200, 0.1);
-  color: var(--global-link-color);
-}
-
 .page__content p,
 .page__content li,
 .page__content dd {
@@ -204,7 +177,7 @@ html {
 }
 
 .page__content > .home-section:first-child {
-  margin-top: 0.25rem;
+  margin-top: 0;
 }
 
 .home-section {
@@ -283,16 +256,26 @@ html {
 
 .publication-card {
   display: grid;
-  grid-template-columns: minmax(240px, 320px) minmax(0, 1fr);
+  grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
   gap: 1.4rem;
   align-items: start;
   margin-bottom: 1.4rem;
   padding: 1.2rem;
 }
 
+.publication-card__asset {
+  display: grid;
+  width: 100%;
+  gap: 0.9rem;
+  align-self: center;
+}
+
+/* Publication image size is mainly controlled here:
+   1. column width in .publication-card
+   2. media height in .publication-card__media */
 .publication-card__media {
   display: flex;
-  min-height: 220px;
+  min-height: 200px;
   overflow: hidden;
   border-radius: 16px;
   background: rgba(82, 173, 200, 0.08);
@@ -313,16 +296,17 @@ html {
 
 .publication-card__body {
   min-width: 0;
+  align-self: center;
 }
 
-.publication-card__venue {
+.page__content .publication-card__venue {
   margin: 0 0 0.45rem;
   color: #d64933;
   font-size: 0.88rem;
   font-style: italic;
   font-weight: 700;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  letter-spacing: 0.01em;
+  text-transform: none;
 }
 
 .publication-card__title {
@@ -352,33 +336,54 @@ html {
   margin-top: 1rem;
 }
 
+.publication-card__links--aside {
+  margin-top: 0;
+  flex-wrap: nowrap;
+  gap: 0.45rem;
+}
+
 .pub-link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.5rem 0.9rem;
+  white-space: nowrap;
+  padding: 0.42rem 0.68rem;
   border: 1px solid var(--global-border-color);
   border-radius: 999px;
   color: var(--global-link-color);
-  font-size: 0.92rem;
+  font-size: 0.84rem;
   font-weight: 600;
   text-decoration: none !important;
   transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.pub-link--github {
+  gap: 0.35rem;
+}
+
+.pub-link--github i {
+  font-size: 0.9rem;
+}
+
+.gh-star-count {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.24rem;
+  padding-left: 0.08rem;
+  color: inherit;
+  font-size: 0.82rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.gh-star-count::before {
+  content: "\2605";
+  font-size: 0.8rem;
 }
 
 .pub-link:hover {
   border-color: var(--global-link-color);
   background: rgba(82, 173, 200, 0.08);
   transform: translateY(-1px);
-}
-
-.pub-badge {
-  display: inline-flex;
-  align-items: center;
-}
-
-.pub-badge img {
-  display: block;
 }
 
 .timeline-card {
@@ -426,27 +431,27 @@ html {
 @media (min-width: 1024px) {
   #main {
     display: grid;
-    grid-template-columns: minmax(250px, 290px) minmax(0, 1260px);
-    gap: clamp(2.5rem, 4vw, 5rem);
+    grid-template-columns: minmax(258px, 294px) minmax(0, 1600px);
+    gap: clamp(0.28rem, 0.45vw, 0.44rem);
     align-items: start;
     justify-content: center;
   }
 
   #main > .sidebar {
     position: sticky;
-    top: 5.75rem;
+    top: 3.85rem;
     width: 100%;
     height: auto;
     overflow: visible;
-    margin: 0;
+    margin: -0.2rem 0 0;
     padding-top: 0;
     max-width: none;
     float: none;
   }
 
   #main > .sidebar .author__avatar img {
-    width: min(100%, 208px);
-    max-width: 208px;
+    width: min(100%, 173px);
+    max-width: 173px;
   }
 
   #main > .sidebar .author__content,
@@ -486,20 +491,13 @@ html {
     white-space: normal;
   }
 
-  .section-nav {
-    top: 4.5rem;
-    margin-bottom: 1.25rem;
-    padding: 0.8rem 0.85rem;
+  .publication-card__asset {
+    gap: 0.8rem;
   }
 
   .home-section__title {
     scroll-margin-top: 8rem;
   }
-}
-
-html[data-theme="dark"] .section-nav {
-  background: rgba(71, 71, 71, 0.88);
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.24);
 }
 
 html[data-theme="dark"] .intro-card,
@@ -519,8 +517,67 @@ html[data-theme="dark"] .status-note {
   background: rgba(255, 138, 122, 0.12);
   border-left-color: #ff8a7a;
 }
-
-html[data-theme="dark"] .publication-card__venue {
-  color: #ff8a7a;
-}
 </style>
+
+<script>
+(function () {
+  function formatStars(count) {
+    if (count >= 1000) {
+      return (count / 1000).toFixed(count >= 10000 ? 0 : 1).replace(/\.0$/, "") + "k";
+    }
+    return String(count);
+  }
+
+  function getCache(key, maxAgeMs) {
+    try {
+      var raw = localStorage.getItem(key);
+      if (!raw) return null;
+      var parsed = JSON.parse(raw);
+      if (Date.now() - parsed.t > maxAgeMs) return null;
+      return parsed.v;
+    } catch (error) {
+      return null;
+    }
+  }
+
+  function setCache(key, value) {
+    try {
+      localStorage.setItem(key, JSON.stringify({ t: Date.now(), v: value }));
+    } catch (error) {}
+  }
+
+  async function fetchStars(repo) {
+    var cacheKey = "gh-stars:" + repo;
+    var cached = getCache(cacheKey, 1000 * 60 * 60 * 12);
+    if (cached !== null) return cached;
+
+    try {
+      var response = await fetch("https://api.github.com/repos/" + repo, {
+        headers: { Accept: "application/vnd.github+json" }
+      });
+      if (!response.ok) throw new Error("GitHub API error");
+      var payload = await response.json();
+      var count = formatStars(payload.stargazers_count || 0);
+      setCache(cacheKey, count);
+      return count;
+    } catch (error) {
+      return getCache(cacheKey, Number.MAX_SAFE_INTEGER) || "--";
+    }
+  }
+
+  async function hydrateStars() {
+    var nodes = document.querySelectorAll(".gh-star-count[data-repo]");
+    for (var i = 0; i < nodes.length; i += 1) {
+      var node = nodes[i];
+      node.textContent = "...";
+      node.textContent = await fetchStars(node.dataset.repo);
+    }
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", hydrateStars);
+  } else {
+    hydrateStars();
+  }
+})();
+</script>

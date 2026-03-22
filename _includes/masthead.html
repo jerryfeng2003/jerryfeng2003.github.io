@@ -7,6 +7,12 @@
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ base_path }}/"><i class="fas fa-home icon-pad-right" aria-hidden="true"></i>{{ site.title }}</a></li>
+          {% if page.url == "/" %}
+            <li class="masthead__menu-item masthead__menu-item--section"><a href="{{ base_path }}/#about-title">About</a></li>
+            <li class="masthead__menu-item masthead__menu-item--section"><a href="{{ base_path }}/#publications-title">Publications</a></li>
+            <li class="masthead__menu-item masthead__menu-item--section"><a href="{{ base_path }}/#experience-title">Experience</a></li>
+            <li class="masthead__menu-item masthead__menu-item--section"><a href="{{ base_path }}/#honors-title">Honors</a></li>
+          {% endif %}
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}
               {% assign domain = '' %}
