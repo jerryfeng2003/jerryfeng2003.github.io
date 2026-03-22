@@ -121,14 +121,6 @@ redirect_from:
 
   <article class="timeline-card timeline-card--compact">
     <div class="timeline-card__body">
-      <h3 class="timeline-card__title">National Undergraduate Innovation Training Program (~$2,800), Project Lead</h3>
-      <p class="timeline-card__meta">Huazhong University of Science and Technology</p>
-    </div>
-    <p class="timeline-card__date">May 2024</p>
-  </article>
-
-  <article class="timeline-card timeline-card--compact">
-    <div class="timeline-card__body">
       <h3 class="timeline-card__title">National Scholarship (Top 0.2%)</h3>
       <p class="timeline-card__meta">Huazhong University of Science and Technology</p>
     </div>
