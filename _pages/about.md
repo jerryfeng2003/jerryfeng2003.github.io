@@ -154,7 +154,7 @@ body {
 }
 
 #main {
-  max-width: 2140px;
+  max-width: 1880px;
   margin-top: 0.5rem;
   margin-bottom: 0.2rem;
   padding-left: clamp(1.1rem, 2.4vw, 2rem);
@@ -302,11 +302,12 @@ html {
 .page__content .publication-card__venue {
   margin: 0 0 0.45rem;
   color: #d64933;
-  font-size: 0.88rem;
+  font-size: 1.18rem;
   font-style: italic;
   font-weight: 700;
   letter-spacing: 0.01em;
   text-transform: none;
+  line-height: 1.35;
 }
 
 .publication-card__title {
@@ -431,7 +432,7 @@ html {
 @media (min-width: 1024px) {
   #main {
     display: grid;
-    grid-template-columns: minmax(258px, 294px) minmax(0, 1600px);
+    grid-template-columns: minmax(258px, 294px) minmax(0, 1440px);
     gap: clamp(0.28rem, 0.45vw, 0.44rem);
     align-items: start;
     justify-content: center;

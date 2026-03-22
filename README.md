@@ -86,3 +86,9 @@ If you want the left profile column wider:
 1. [_pages/about.md](/Users/tianruifeng/Documents/GitHub/jerryfeng2003.github.io/_pages/about.md): homepage content and homepage-specific styling.
 1. [_includes/masthead.html](/Users/tianruifeng/Documents/GitHub/jerryfeng2003.github.io/_includes/masthead.html): top navigation bar.
 1. [scripts/dev.sh](/Users/tianruifeng/Documents/GitHub/jerryfeng2003.github.io/scripts/dev.sh): local development entrypoint.
+
+## Acknowledgement
+
+This site is built from the [Academic Pages](https://academicpages.github.io/) template, which in turn is based on [Minimal Mistakes](https://mmistakes.github.io/minimal-mistakes/).
+
+Thanks to the Academic Pages maintainers and the original Minimal Mistakes author, Michael Rose, for providing and maintaining the template foundation.
