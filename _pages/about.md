@@ -11,10 +11,7 @@ redirect_from:
   <h2 class="home-section__title" id="about-title">About Me</h2>
   <div class="intro-card">
     <p class="intro-card__lead">
-      I am an incoming Ph.D. student in Computer Science at The University of Texas at Austin, where I will be advised by Prof. <a href="https://www.chenfengx.com/">Chenfeng Xu</a>.
-    </p>
-    <p>
-      Before that, I worked as a student researcher at <a href="http://vlrlab.aia.hust.edu.cn/">VLRLab</a> under the supervision of Prof. <a href="https://scholar.google.com/citations?user=UeltiQ4AAAAJ&amp;hl=en">Xiang Bai</a> at Huazhong University of Science and Technology, where I am pursuing my B.Eng. degree and expect to graduate in June 2026.
+      I am a senior undergraduate student at HUST, working as a research intern at <a href="http://vlrlab.aia.hust.edu.cn/">VLRLab</a> under the supervision of Prof. <a href="https://scholar.google.com/citations?user=UeltiQ4AAAAJ&amp;hl=en">Xiang Bai</a> . I will receive my B.Eng. degree in June, 2026.
     </p>
     <p>
       My research interests lie in Machine Learning Systems and Generative Models, with the goal of developing AI systems that expand human potential.
@@ -26,9 +23,6 @@ redirect_from:
       <span class="interest-pill">Multimodal Learning</span>
     </div>
   </div>
-  <p class="status-note">
-    I am actively seeking industry internship opportunities. Feel free to reach out if there is a potential fit.
-  </p>
 </section>
 
 <section class="home-section">
