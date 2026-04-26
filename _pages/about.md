@@ -30,22 +30,13 @@ redirect_from:
   <p class="section-note">* Equal Contribution, † Corresponding Author</p>
 
   <article class="publication-card">
+    <span class="publication-card__venue-badge">MLSys 2026</span>
     <div class="publication-card__asset">
       <a class="publication-card__media" href="https://streamdiffusionv2.github.io/" aria-label="StreamDiffusionV2 project page">
         <img class="publication-thumb" src="/images/publications/streamdiffusionv2.gif" alt="StreamDiffusionV2 preview" />
       </a>
-      <div class="publication-card__links publication-card__links--aside">
-        <a class="pub-link" href="https://streamdiffusionv2.github.io/">Project</a>
-        <a class="pub-link" href="https://arxiv.org/pdf/2511.07399">PDF</a>
-        <a class="pub-link pub-link--github" href="https://github.com/chenfengxu714/StreamDiffusionV2">
-          <i class="fab fa-github" aria-hidden="true"></i>
-          <span>GitHub</span>
-          <span class="gh-star-count" data-repo="chenfengxu714/StreamDiffusionV2">...</span>
-        </a>
-      </div>
     </div>
     <div class="publication-card__body">
-      <p class="publication-card__venue">MLSys 2026</p>
       <h3 class="publication-card__title">StreamDiffusionV2: A Streaming System for Dynamic and Interactive Video Generation</h3>
       <p class="publication-card__authors">
         <strong class="author-highlight">Tianrui Feng</strong>, Zhi Li, Shuo Yang, Haocheng Xi, Muyang Li, Xiuyu Li, Lvmin Zhang, Keting Yang, Kelly Peng, Song Han, Maneesh Agrawala, Kurt Keutzer, Akio Kodaira, Chenfeng Xu<sup>†</sup>
@@ -53,25 +44,29 @@ redirect_from:
       <p class="publication-card__summary">
         An open-source interactive streaming system for real-time diffusion generation.
       </p>
+      <div class="publication-card__links" aria-label="StreamDiffusionV2 links">
+        <a class="pub-link" href="https://streamdiffusionv2.github.io/" aria-label="Project homepage" title="Project homepage">
+          <i class="fas fa-home" aria-hidden="true"></i>
+        </a>
+        <a class="pub-link" href="https://arxiv.org/pdf/2511.07399" aria-label="PDF" title="PDF">
+          <i class="fas fa-file-pdf" aria-hidden="true"></i>
+        </a>
+        <a class="pub-link pub-link--github" href="https://github.com/chenfengxu714/StreamDiffusionV2" aria-label="GitHub stars" title="GitHub stars">
+          <i class="fab fa-github" aria-hidden="true"></i>
+          <span class="gh-star-count" data-repo="chenfengxu714/StreamDiffusionV2">...</span>
+        </a>
+      </div>
     </div>
   </article>
 
   <article class="publication-card">
+    <span class="publication-card__venue-badge">IEEE TPAMI 2025</span>
     <div class="publication-card__asset">
       <a class="publication-card__media" href="https://github.com/jerryfeng2003/PointGST" aria-label="PointGST repository">
         <img class="publication-thumb" src="/images/publications/pointgst.png" alt="PointGST preview" />
       </a>
-      <div class="publication-card__links publication-card__links--aside">
-        <a class="pub-link" href="https://arxiv.org/pdf/2410.08114">PDF</a>
-        <a class="pub-link pub-link--github" href="https://github.com/jerryfeng2003/PointGST">
-          <i class="fab fa-github" aria-hidden="true"></i>
-          <span>GitHub</span>
-          <span class="gh-star-count" data-repo="jerryfeng2003/PointGST">...</span>
-        </a>
-      </div>
     </div>
     <div class="publication-card__body">
-      <p class="publication-card__venue">IEEE TPAMI 2025</p>
       <h3 class="publication-card__title">Parameter-Efficient Fine-Tuning in Spectral Domain for Point Cloud Learning</h3>
       <p class="publication-card__authors">
         Dingkang Liang<sup>*</sup>, <strong class="author-highlight">Tianrui Feng<sup>*</sup></strong>, Xin Zhou<sup>*</sup>, Yumeng Zhang, Zhikang Zou, Xiang Bai<sup>†</sup>
@@ -79,6 +74,15 @@ redirect_from:
       <p class="publication-card__summary">
         A spectral-domain perspective for parameter-efficient fine-tuning in point cloud learning with strong empirical performance.
       </p>
+      <div class="publication-card__links" aria-label="PointGST links">
+        <a class="pub-link" href="https://arxiv.org/pdf/2410.08114" aria-label="PDF" title="PDF">
+          <i class="fas fa-file-pdf" aria-hidden="true"></i>
+        </a>
+        <a class="pub-link pub-link--github" href="https://github.com/jerryfeng2003/PointGST" aria-label="GitHub stars" title="GitHub stars">
+          <i class="fab fa-github" aria-hidden="true"></i>
+          <span class="gh-star-count" data-repo="jerryfeng2003/PointGST">...</span>
+        </a>
+      </div>
     </div>
   </article>
 
@@ -140,8 +144,8 @@ body {
 }
 
 #main {
-  max-width: 1880px;
-  margin-top: 0.5rem;
+  max-width: 1320px;
+  margin-top: 0.9rem;
   margin-bottom: 0.2rem;
   padding-left: clamp(1.1rem, 2.4vw, 2rem);
   padding-right: clamp(1.1rem, 2.4vw, 2rem);
@@ -152,66 +156,90 @@ html {
 }
 
 .page__content {
-  max-width: none;
+  max-width: 1030px;
+  font-size: 0.92rem;
 }
 
 .page__content p,
 .page__content li,
 .page__content dd {
   color: var(--global-text-color);
-  line-height: 1.7;
+  line-height: 1.48;
 }
 
 .page__content > .home-section:first-child {
   margin-top: 0;
+  margin-bottom: 1.9rem;
 }
 
 .home-section {
-  margin-bottom: 3rem;
+  margin-bottom: 1.65rem;
 }
 
 .home-section:last-child {
-  margin-bottom: 1rem;
+  margin-bottom: 0.65rem;
 }
 
 .home-section__title {
-  margin-bottom: 1.25rem;
-  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-bottom: 0.68rem;
+  padding-bottom: 0.42rem;
+  font-size: 1.14rem;
+  line-height: 1.25;
   scroll-margin-top: 8.9rem;
+}
+
+.home-section__title::before {
+  content: "";
+  width: 0.24rem;
+  height: 1.05rem;
+  border-radius: 999px;
+  background: #1e3a8a;
 }
 
 .intro-card,
 .publication-card,
 .timeline-card {
   border: 1px solid var(--global-border-color);
-  border-radius: 20px;
+  border-radius: 12px;
   background: var(--global-bg-color);
-  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.06);
+  box-shadow: 0 8px 22px rgba(15, 23, 42, 0.04);
 }
 
 .intro-card {
-  padding: 1.5rem 1.6rem;
+  padding: 1.08rem 1.18rem;
+}
+
+.intro-card p {
+  margin-bottom: 0.78rem;
+  line-height: 1.58;
+}
+
+.intro-card p:last-child {
+  margin-bottom: 0;
 }
 
 .intro-card__lead {
   margin-top: 0;
-  font-size: 1.06rem;
+  font-size: 0.92rem;
 }
 
 .interest-pills {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.7rem;
-  margin-top: 1.15rem;
+  gap: 0.5rem;
+  margin-top: 0.78rem;
 }
 
 .interest-pill {
-  padding: 0.42rem 0.8rem;
+  padding: 0.24rem 0.58rem;
   border: 1px solid var(--global-border-color);
   border-radius: 999px;
   background: rgba(82, 173, 200, 0.08);
   color: var(--global-text-color);
-  font-size: 0.88rem;
+  font-size: 0.72rem;
   font-weight: 600;
 }
 
@@ -236,23 +264,23 @@ html {
 
 .section-note,
 .section-link {
-  margin: 0 0 1rem;
-  font-size: 0.92rem;
+  margin: 0 0 0.62rem;
+  font-size: 0.78rem;
 }
 
 .publication-card {
+  position: relative;
   display: grid;
-  grid-template-columns: minmax(220px, 300px) minmax(0, 1fr);
-  gap: 1.4rem;
+  grid-template-columns: minmax(168px, 224px) minmax(0, 1fr);
+  gap: 0.78rem;
   align-items: start;
-  margin-bottom: 1.4rem;
-  padding: 1.2rem;
+  margin-bottom: 0.62rem;
+  padding: 1.02rem 0.64rem 0.64rem;
 }
 
 .publication-card__asset {
   display: grid;
   width: 100%;
-  gap: 0.9rem;
   align-self: center;
 }
 
@@ -261,10 +289,29 @@ html {
    2. media height in .publication-card__media */
 .publication-card__media {
   display: flex;
-  min-height: 200px;
+  min-height: 124px;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 9px;
   background: rgba(82, 173, 200, 0.08);
+}
+
+.publication-card__venue-badge {
+  position: absolute;
+  top: 0.28rem;
+  left: 0.34rem;
+  z-index: 1;
+  max-width: calc(100% - 0.68rem);
+  padding: 0.16rem 0.42rem;
+  border: 1px solid rgba(37, 99, 235, 0.18);
+  border-radius: 7px;
+  background: rgba(239, 246, 255, 0.52);
+  color: #1d4ed8;
+  font-size: 0.67rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-decoration: none;
+  white-space: nowrap;
+  backdrop-filter: blur(6px);
 }
 
 .publication-card__media:hover img {
@@ -285,48 +332,39 @@ html {
   align-self: center;
 }
 
-.page__content .publication-card__venue {
-  margin: 0 0 0.45rem;
-  color: #d64933;
-  font-size: 1.0rem;
-  font-style: italic;
-  font-weight: 700;
-  letter-spacing: 0.01em;
-  text-transform: none;
-  line-height: 1.35;
-}
-
 .publication-card__title {
-  margin: 0 0 0.55rem;
-  font-size: 1.18rem;
-  line-height: 1.35;
+  margin: 0 0 0.28rem;
+  font-size: 0.94rem;
+  font-weight: 750;
+  line-height: 1.28;
 }
 
-.publication-card__authors {
-  margin: 0 0 0.7rem;
-  font-size: 0.95rem;
+.page__content .publication-card__authors {
+  margin: 0 0 0.32rem;
+  color: #4b5563;
+  font-size: 0.72rem;
+  line-height: 1.35;
 }
 
 .author-highlight {
-  color: var(--global-text-color);
+  color: var(--global-link-color);
+  font-weight: 750;
 }
 
-.publication-card__summary {
+.page__content .publication-card__summary {
   margin: 0;
+  color: #5b6472;
+  font-size: 0.76rem;
+  font-style: italic;
+  line-height: 1.38;
 }
 
 .publication-card__links {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.28rem;
   align-items: center;
-  margin-top: 1rem;
-}
-
-.publication-card__links--aside {
-  margin-top: 0;
-  flex-wrap: nowrap;
-  gap: 0.45rem;
+  margin-top: 0.46rem;
 }
 
 .pub-link {
@@ -334,37 +372,41 @@ html {
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  padding: 0.42rem 0.68rem;
+  width: 1.68rem;
+  height: 1.68rem;
+  padding: 0;
   border: 1px solid var(--global-border-color);
-  border-radius: 999px;
+  border-radius: 8px;
   color: var(--global-link-color);
-  font-size: 0.84rem;
+  font-size: 0.74rem;
   font-weight: 600;
   text-decoration: none !important;
   transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
 }
 
 .pub-link--github {
-  gap: 0.35rem;
+  width: auto;
+  min-width: 2.52rem;
+  gap: 0.2rem;
+  padding: 0 0.34rem;
 }
 
 .pub-link--github i {
-  font-size: 0.9rem;
+  font-size: 0.74rem;
 }
 
 .gh-star-count {
   display: inline-flex;
   align-items: center;
-  gap: 0.24rem;
-  padding-left: 0.08rem;
+  gap: 0.18rem;
   color: inherit;
-  font-size: 0.82rem;
+  font-size: 0.68rem;
   font-variant-numeric: tabular-nums;
 }
 
 .gh-star-count::before {
   content: "\2605";
-  font-size: 0.8rem;
+  font-size: 0.68rem;
 }
 
 .pub-link:hover {
@@ -376,50 +418,62 @@ html {
 .timeline-card {
   display: grid;
   grid-template-columns: minmax(0, 1fr) auto;
-  gap: 1rem;
+  gap: 0.72rem;
   align-items: start;
-  margin-bottom: 1rem;
-  padding: 1.25rem 1.35rem;
+  margin-bottom: 0.58rem;
+  padding: 0.76rem 0.9rem;
 }
 
 .timeline-card--compact {
-  padding-top: 1.05rem;
-  padding-bottom: 1.05rem;
+  padding-top: 0.62rem;
+  padding-bottom: 0.62rem;
 }
 
 .timeline-card__title {
   margin: 0;
-  font-size: 1rem;
+  color: var(--global-text-color);
+  font-size: 0.9rem;
+  font-weight: 750;
+  line-height: 1.28;
 }
 
-.timeline-card__subtitle,
-.timeline-card__meta {
-  margin: 0.2rem 0 0;
-  font-size: 0.92rem;
+.page__content .timeline-card__subtitle,
+.page__content .timeline-card__meta {
+  margin: 0.12rem 0 0;
+  color: #5b6472;
+  font-size: 0.76rem;
+  line-height: 1.34;
 }
 
 .timeline-card__list {
-  margin: 0.85rem 0 0;
+  margin: 0.42rem 0 0;
   padding-left: 1.15rem;
 }
 
-.timeline-card__list li + li {
-  margin-top: 0.35rem;
+.page__content .timeline-card__list li {
+  margin-bottom: 0;
+  color: #4b5563;
+  font-size: 0.76rem;
+  line-height: 1.36;
 }
 
-.timeline-card__date {
+.timeline-card__list li + li {
+  margin-top: 0.18rem;
+}
+
+.page__content .timeline-card__date {
   margin: 0;
   white-space: nowrap;
-  color: var(--global-text-color-light);
-  font-size: 0.9rem;
+  color: #5b6472;
+  font-size: 0.72rem;
   font-weight: 600;
 }
 
 @media (min-width: 1024px) {
   #main {
     display: grid;
-    grid-template-columns: minmax(258px, 294px) minmax(0, 1440px);
-    gap: clamp(0.28rem, 0.45vw, 0.44rem);
+    grid-template-columns: minmax(220px, 252px) minmax(0, 1030px);
+    gap: clamp(0.5rem, 0.9vw, 1rem);
     align-items: start;
     justify-content: center;
   }
@@ -437,8 +491,8 @@ html {
   }
 
   #main > .sidebar .author__avatar img {
-    width: min(100%, 173px);
-    max-width: 173px;
+    width: min(100%, 148px);
+    max-width: 148px;
   }
 
   #main > .sidebar .author__content,
@@ -448,13 +502,20 @@ html {
   }
 
   #main > .sidebar .author__name {
-    font-size: 1.15rem;
+    font-size: 1.02rem;
   }
 
   #main > .sidebar .author__bio,
   #main > .sidebar li,
   #main > .sidebar p {
-    font-size: 0.92rem;
+    font-size: 0.8rem;
+    line-height: 1.45;
+  }
+
+  #main > .sidebar .author__urls a {
+    font-size: 0.82rem;
+    padding-top: 1px;
+    padding-bottom: 1px;
   }
 
   #main > .page {
@@ -471,7 +532,7 @@ html {
   }
 
   .publication-card__media {
-    min-height: 210px;
+    min-height: 148px;
   }
 
   .timeline-card__date {
@@ -487,17 +548,75 @@ html {
   }
 }
 
+@media (max-width: 600px) {
+  #main {
+    margin-top: 0.65rem;
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+
+  .page__content {
+    font-size: 0.88rem;
+  }
+
+  .home-section {
+    margin-bottom: 1.25rem;
+  }
+
+  .home-section__title {
+    font-size: 1.04rem;
+  }
+
+  .intro-card,
+  .timeline-card {
+    padding: 0.78rem;
+  }
+
+  .intro-card {
+    padding: 0.92rem;
+  }
+
+  .publication-card {
+    padding: 0.98rem 0.68rem 0.68rem;
+  }
+
+}
+
 html[data-theme="dark"] .intro-card,
 html[data-theme="dark"] .publication-card,
 html[data-theme="dark"] .timeline-card {
-  background: #525252;
-  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.24);
+  background: #3f3f3f;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.22);
 }
 
 html[data-theme="dark"] .interest-pill,
 html[data-theme="dark"] .pub-link:hover,
 html[data-theme="dark"] .publication-card__media {
   background: rgba(14, 161, 197, 0.14);
+}
+
+html[data-theme="dark"] .publication-card__venue-badge {
+  border-color: rgba(96, 165, 250, 0.22);
+  background: rgba(15, 23, 42, 0.5);
+  color: #93c5fd;
+}
+
+html[data-theme="dark"] .page__content .publication-card__authors {
+  color: #d1d5db;
+}
+
+html[data-theme="dark"] .page__content .publication-card__summary {
+  color: #c3cad4;
+}
+
+html[data-theme="dark"] .page__content .timeline-card__subtitle,
+html[data-theme="dark"] .page__content .timeline-card__meta,
+html[data-theme="dark"] .page__content .timeline-card__date {
+  color: #c3cad4;
+}
+
+html[data-theme="dark"] .page__content .timeline-card__list li {
+  color: #d1d5db;
 }
 
 html[data-theme="dark"] .status-note {
