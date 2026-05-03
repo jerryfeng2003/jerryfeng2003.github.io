@@ -20,7 +20,6 @@ redirect_from:
       <span class="interest-pill">ML Systems</span>
       <span class="interest-pill">Generative Models</span>
       <span class="interest-pill">3D Vision</span>
-      <span class="interest-pill">Multimodal Learning</span>
     </div>
   </div>
 </section>
