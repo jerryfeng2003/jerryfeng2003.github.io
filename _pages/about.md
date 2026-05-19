@@ -29,7 +29,7 @@ redirect_from:
   <p class="section-note">* Equal Contribution, † Corresponding Author</p>
 
   <article class="publication-card">
-    <span class="publication-card__venue-badge">MLSys 2026</span>
+    <span class="publication-card__venue-badge">MLSys 2026 <span class="publication-card__award">(Best Paper Award)</span></span>
     <div class="publication-card__asset">
       <a class="publication-card__media" href="https://streamdiffusionv2.github.io/" aria-label="StreamDiffusionV2 project page">
         <img class="publication-thumb" src="/images/publications/streamdiffusionv2.gif" alt="StreamDiffusionV2 preview" />
@@ -311,6 +311,10 @@ html {
   text-decoration: none;
   white-space: nowrap;
   backdrop-filter: blur(6px);
+}
+
+.publication-card__award {
+  color: #dc2626;
 }
 
 .publication-card__media:hover img {
@@ -598,6 +602,10 @@ html[data-theme="dark"] .publication-card__venue-badge {
   border-color: rgba(96, 165, 250, 0.22);
   background: rgba(15, 23, 42, 0.5);
   color: #93c5fd;
+}
+
+html[data-theme="dark"] .publication-card__award {
+  color: #f87171;
 }
 
 html[data-theme="dark"] .page__content .publication-card__authors {
