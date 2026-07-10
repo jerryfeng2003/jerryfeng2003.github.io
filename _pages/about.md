@@ -11,7 +11,7 @@ redirect_from:
   <h2 class="home-section__title" id="about-title">About Me</h2>
   <div class="intro-card">
     <p class="intro-card__lead">
-      I am a senior undergraduate student at HUST, working as a research intern at <a href="http://vlrlab.aia.hust.edu.cn/">VLRLab</a> under the supervision of Prof. <a href="https://scholar.google.com/citations?user=UeltiQ4AAAAJ&amp;hl=en">Xiang Bai</a> . I will receive my B.Eng. degree in June, 2026.
+      I am a Ph.D. student in Computer Science at <a href="https://www.cs.utexas.edu/">The University of Texas at Austin</a>, advised by Prof. <a href="https://www.chenfengx.com/">Chenfeng Xu</a>. I received my B.Eng. degree from Huazhong University of Science and Technology (HUST) in June 2026, where I was advised by Prof. <a href="https://dk-liang.github.io/">Dingkang Liang</a> and Prof. <a href="https://xbai.vlrlab.net/">Xiang Bai</a> at <a href="http://vlrlab.aia.hust.edu.cn/">VLRLab</a>.
     </p>
     <p>
       My research interests lie in Machine Learning Systems and Generative Models, with the goal of developing AI systems that expand human potential.
@@ -27,6 +27,34 @@ redirect_from:
 <section class="home-section">
   <h2 class="home-section__title" id="publications-title">Selected Publications</h2>
   <p class="section-note">* Equal Contribution, † Corresponding Author</p>
+
+  <article class="publication-card">
+    <span class="publication-card__venue-badge">Technical Report 2026</span>
+    <div class="publication-card__asset">
+      <a class="publication-card__media" href="https://technology.robbyant.com/lingbot-world-v2" aria-label="LingBot-World-V2 project page">
+        <img class="publication-thumb" src="/images/publications/lingbot-world-v2.gif" alt="LingBot-World-V2 preview" />
+      </a>
+    </div>
+    <div class="publication-card__body">
+      <h3 class="publication-card__title">LingBot-World-V2: Infinite Worlds with Versatile Interactions</h3>
+      <p class="publication-card__authors">Robbyant Team</p>
+      <p class="publication-card__summary">
+        LingBot-World 2.0 enables unbounded, real-time world generation with versatile interactions and an agentic harness.
+      </p>
+      <div class="publication-card__links" aria-label="LingBot-World-V2 links">
+        <a class="pub-link" href="https://technology.robbyant.com/lingbot-world-v2" aria-label="Project homepage" title="Project homepage">
+          <i class="fas fa-home" aria-hidden="true"></i>
+        </a>
+        <a class="pub-link" href="https://arxiv.org/pdf/2607.07534" aria-label="PDF" title="PDF">
+          <i class="fas fa-file-pdf" aria-hidden="true"></i>
+        </a>
+        <a class="pub-link pub-link--github" href="https://github.com/Robbyant/lingbot-world-v2" aria-label="GitHub stars" title="GitHub stars">
+          <i class="fab fa-github" aria-hidden="true"></i>
+          <span class="gh-star-count" data-repo="Robbyant/lingbot-world-v2">...</span>
+        </a>
+      </div>
+    </div>
+  </article>
 
   <article class="publication-card">
     <span class="publication-card__venue-badge">MLSys 2026 <span class="publication-card__award">(Best Paper Award)</span></span>
@@ -91,17 +119,47 @@ redirect_from:
 </section>
 
 <section class="home-section">
-  <h2 class="home-section__title" id="experience-title">Research Experience</h2>
+  <h2 class="home-section__title" id="education-title">Education</h2>
   <article class="timeline-card">
     <div class="timeline-card__body">
-      <h3 class="timeline-card__title">VLRLab, Huazhong University of Science and Technology (HUST)</h3>
-      <p class="timeline-card__subtitle">Research Intern</p>
-      <ul class="timeline-card__list">
-        <li><strong>Advisor:</strong> <a href="https://scholar.google.com/citations?user=UeltiQ4AAAAJ&amp;hl=en">Xiang Bai</a></li>
-        <li><strong>Research Topics:</strong> Efficient Machine Learning, 3D Vision, Generative Models, Multi-modality Learning</li>
-      </ul>
+      <div class="timeline-card__identity">
+        <span class="timeline-card__logo" aria-hidden="true"><img src="/images/institutions/ut-austin.svg" alt="" /></span>
+        <div>
+          <h3 class="timeline-card__title">The University of Texas at Austin</h3>
+          <p class="timeline-card__subtitle">Ph.D. in Computer Science</p>
+        </div>
+      </div>
     </div>
-    <p class="timeline-card__date">Jun 2023 - Current</p>
+    <p class="timeline-card__date">Aug 2026 - Present</p>
+  </article>
+
+  <article class="timeline-card">
+    <div class="timeline-card__body">
+      <div class="timeline-card__identity">
+        <span class="timeline-card__logo" aria-hidden="true"><img src="/images/institutions/hust.png" alt="" /></span>
+        <div>
+          <h3 class="timeline-card__title">Huazhong University of Science and Technology</h3>
+          <p class="timeline-card__subtitle">B.Eng. in Artificial Intelligence</p>
+        </div>
+      </div>
+    </div>
+    <p class="timeline-card__date">Sep 2022 - Jun 2026</p>
+  </article>
+</section>
+
+<section class="home-section">
+  <h2 class="home-section__title" id="work-title">Work Experience</h2>
+  <article class="timeline-card">
+    <div class="timeline-card__body">
+      <div class="timeline-card__identity">
+        <span class="timeline-card__logo" aria-hidden="true"><img src="/images/institutions/ant-group.png" alt="" /></span>
+        <div>
+          <h3 class="timeline-card__title">Ant Research</h3>
+          <p class="timeline-card__subtitle">Research Intern</p>
+        </div>
+      </div>
+    </div>
+    <p class="timeline-card__date">Apr 2026 - Jul 2026</p>
   </article>
 </section>
 
@@ -110,26 +168,26 @@ redirect_from:
 
   <article class="timeline-card timeline-card--compact">
     <div class="timeline-card__body">
-      <h3 class="timeline-card__title">Undergraduate Natural Science Innovation Fund (~$7,000), Project Lead</h3>
+      <h3 class="timeline-card__title">Outstanding Graduate</h3>
       <p class="timeline-card__meta">Huazhong University of Science and Technology</p>
     </div>
-    <p class="timeline-card__date">Jun 2025</p>
+    <p class="timeline-card__date">Jun 2026</p>
   </article>
 
   <article class="timeline-card timeline-card--compact">
     <div class="timeline-card__body">
-      <h3 class="timeline-card__title">National Scholarship (Top 0.2%)</h3>
+      <h3 class="timeline-card__title">Best Research Paper Award</h3>
+      <p class="timeline-card__meta">Conference on Machine Learning and Systems (MLSys 2026)</p>
+    </div>
+    <p class="timeline-card__date">May 2026</p>
+  </article>
+
+  <article class="timeline-card timeline-card--compact">
+    <div class="timeline-card__body">
+      <h3 class="timeline-card__title">National Scholarship</h3>
       <p class="timeline-card__meta">Huazhong University of Science and Technology</p>
     </div>
     <p class="timeline-card__date">Oct 2023</p>
-  </article>
-
-  <article class="timeline-card timeline-card--compact">
-    <div class="timeline-card__body">
-      <h3 class="timeline-card__title">ICCV 2023, CVPPA Workshop Challenge, Rank 6th</h3>
-      <p class="timeline-card__meta">International Conference on Computer Vision Workshop, 2023</p>
-    </div>
-    <p class="timeline-card__date">Aug 2023</p>
   </article>
 </section>
 
@@ -430,6 +488,34 @@ html {
 .timeline-card--compact {
   padding-top: 0.62rem;
   padding-bottom: 0.62rem;
+}
+
+.timeline-card__identity {
+  display: flex;
+  gap: 0.68rem;
+  align-items: center;
+  min-width: 0;
+}
+
+.timeline-card__logo {
+  display: inline-flex;
+  flex: 0 0 4rem;
+  align-items: center;
+  justify-content: center;
+  width: 4rem;
+  height: 2.45rem;
+  padding: 0.22rem;
+  border: 1px solid var(--global-border-color);
+  border-radius: 8px;
+  background: #fff;
+  overflow: hidden;
+}
+
+.timeline-card__logo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .timeline-card__title {
