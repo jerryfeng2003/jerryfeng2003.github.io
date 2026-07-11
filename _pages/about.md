@@ -130,7 +130,10 @@ redirect_from:
         </div>
       </div>
     </div>
-    <p class="timeline-card__date">Aug 2026 - Present</p>
+    <div class="timeline-card__side">
+      <p class="timeline-card__date">Aug 2026 - Present</p>
+      <p class="timeline-card__location">Austin, TX</p>
+    </div>
   </article>
 
   <article class="timeline-card">
@@ -143,7 +146,10 @@ redirect_from:
         </div>
       </div>
     </div>
-    <p class="timeline-card__date">Sep 2022 - Jun 2026</p>
+    <div class="timeline-card__side">
+      <p class="timeline-card__date">Sep 2022 - Jun 2026</p>
+      <p class="timeline-card__location">Wuhan, China</p>
+    </div>
   </article>
 </section>
 
@@ -159,7 +165,10 @@ redirect_from:
         </div>
       </div>
     </div>
-    <p class="timeline-card__date">Apr 2026 - Jul 2026</p>
+    <div class="timeline-card__side">
+      <p class="timeline-card__date">Apr 2026 - Jul 2026</p>
+      <p class="timeline-card__location">Hangzhou, China</p>
+    </div>
   </article>
 </section>
 
@@ -177,7 +186,7 @@ redirect_from:
   <article class="timeline-card timeline-card--compact">
     <div class="timeline-card__body">
       <h3 class="timeline-card__title">Best Research Paper Award</h3>
-      <p class="timeline-card__meta">Conference on Machine Learning and Systems (MLSys 2026)</p>
+      <p class="timeline-card__meta">Ninth Annual Conference on Machine Learning and Systems (MLSys 2026)</p>
     </div>
     <p class="timeline-card__date">May 2026</p>
   </article>
@@ -558,6 +567,18 @@ html {
   font-weight: 600;
 }
 
+.timeline-card__side {
+  text-align: right;
+}
+
+.page__content .timeline-card__location {
+  margin: 0.14rem 0 0;
+  color: var(--global-text-color-light);
+  font-size: 0.68rem;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
 @media (min-width: 1024px) {
   #main {
     display: grid;
@@ -624,7 +645,12 @@ html {
     min-height: 148px;
   }
 
-  .timeline-card__date {
+  .timeline-card__side {
+    text-align: left;
+  }
+
+  .timeline-card__date,
+  .timeline-card__location {
     white-space: normal;
   }
 
