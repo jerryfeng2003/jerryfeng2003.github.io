@@ -50,7 +50,7 @@ redirect_from:
         </a>
         <a class="pub-link pub-link--github" href="https://github.com/Robbyant/lingbot-world-v2" aria-label="GitHub stars" title="GitHub stars">
           <i class="fab fa-github" aria-hidden="true"></i>
-          <span class="gh-star-count" data-repo="Robbyant/lingbot-world-v2">...</span>
+          <span class="gh-star-count" data-repo="Robbyant/lingbot-world-v2">1.1k</span>
         </a>
       </div>
     </div>
@@ -80,7 +80,7 @@ redirect_from:
         </a>
         <a class="pub-link pub-link--github" href="https://github.com/chenfengxu714/StreamDiffusionV2" aria-label="GitHub stars" title="GitHub stars">
           <i class="fab fa-github" aria-hidden="true"></i>
-          <span class="gh-star-count" data-repo="chenfengxu714/StreamDiffusionV2">...</span>
+          <span class="gh-star-count" data-repo="chenfengxu714/StreamDiffusionV2">518</span>
         </a>
       </div>
     </div>
@@ -107,7 +107,7 @@ redirect_from:
         </a>
         <a class="pub-link pub-link--github" href="https://github.com/jerryfeng2003/PointGST" aria-label="GitHub stars" title="GitHub stars">
           <i class="fab fa-github" aria-hidden="true"></i>
-          <span class="gh-star-count" data-repo="jerryfeng2003/PointGST">...</span>
+          <span class="gh-star-count" data-repo="jerryfeng2003/PointGST">391</span>
         </a>
       </div>
     </div>
@@ -786,17 +786,28 @@ html[data-theme="dark"] .status-note {
       var count = payload.stargazers_count || 0;
       setCache(cacheKey, count);
       return count;
-    } catch (error) {
-      return getCache(cacheKey, 1000 * 60 * 60 * 24);
-    }
+    } catch (githubError) {}
+
+    try {
+      var fallbackResponse = await fetch("https://img.shields.io/github/stars/" + repo + ".json", {
+        cache: "no-store"
+      });
+      if (!fallbackResponse.ok) throw new Error("Shields API error");
+      var fallbackPayload = await fallbackResponse.json();
+      var fallbackCount = fallbackPayload.value || fallbackPayload.message;
+      if (!fallbackCount) throw new Error("Shields response missing star count");
+      setCache(cacheKey, fallbackCount);
+      return fallbackCount;
+    } catch (fallbackError) {}
+
+    return getCache(cacheKey, 1000 * 60 * 60 * 24);
   }
 
   async function hydrateStars() {
     var nodes = Array.prototype.slice.call(document.querySelectorAll(".gh-star-count[data-repo]"));
     await Promise.all(nodes.map(async function (node) {
-      node.textContent = "...";
       var count = await fetchStars(node.dataset.repo);
-      node.textContent = count === null ? "--" : formatStars(count);
+      if (count !== null) node.textContent = formatStars(count);
     }));
   }
 
