@@ -772,31 +772,32 @@ html[data-theme="dark"] .status-note {
   }
 
   async function fetchStars(repo) {
-    var cacheKey = "gh-stars:" + repo;
-    var cached = getCache(cacheKey, 1000 * 60 * 60 * 12);
+    var cacheKey = "gh-stars:v2:" + repo;
+    var cached = getCache(cacheKey, 1000 * 60 * 10);
     if (cached !== null) return cached;
 
     try {
       var response = await fetch("https://api.github.com/repos/" + repo, {
+        cache: "no-store",
         headers: { Accept: "application/vnd.github+json" }
       });
       if (!response.ok) throw new Error("GitHub API error");
       var payload = await response.json();
-      var count = formatStars(payload.stargazers_count || 0);
+      var count = payload.stargazers_count || 0;
       setCache(cacheKey, count);
       return count;
     } catch (error) {
-      return getCache(cacheKey, Number.MAX_SAFE_INTEGER) || "--";
+      return getCache(cacheKey, 1000 * 60 * 60 * 24);
     }
   }
 
   async function hydrateStars() {
-    var nodes = document.querySelectorAll(".gh-star-count[data-repo]");
-    for (var i = 0; i < nodes.length; i += 1) {
-      var node = nodes[i];
+    var nodes = Array.prototype.slice.call(document.querySelectorAll(".gh-star-count[data-repo]"));
+    await Promise.all(nodes.map(async function (node) {
       node.textContent = "...";
-      node.textContent = await fetchStars(node.dataset.repo);
-    }
+      var count = await fetchStars(node.dataset.repo);
+      node.textContent = count === null ? "--" : formatStars(count);
+    }));
   }
 
   if (document.readyState === "loading") {
