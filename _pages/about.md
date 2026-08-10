@@ -154,7 +154,7 @@ redirect_from:
 </section>
 
 <section class="home-section">
-  <h2 class="home-section__title" id="work-title">Work Experience</h2>
+  <h2 class="home-section__title" id="work-title">Experience</h2>
   <article class="timeline-card">
     <div class="timeline-card__body">
       <div class="timeline-card__identity">
