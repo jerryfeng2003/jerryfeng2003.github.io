@@ -160,7 +160,7 @@ redirect_from:
       <div class="timeline-card__identity">
         <span class="timeline-card__logo" aria-hidden="true"><img src="/images/institutions/ant-group.png" alt="" /></span>
         <div>
-          <h3 class="timeline-card__title">Ant Research</h3>
+          <h3 class="timeline-card__title">Ant Group</h3>
           <p class="timeline-card__subtitle">Research Intern</p>
         </div>
       </div>
