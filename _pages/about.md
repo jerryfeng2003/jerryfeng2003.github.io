@@ -11,7 +11,7 @@ redirect_from:
   <h2 class="home-section__title" id="about-title">About Me</h2>
   <div class="intro-card">
     <p class="intro-card__lead">
-      I am a Ph.D. student in Computer Science at <a href="https://www.cs.utexas.edu/">The University of Texas at Austin</a>, advised by Prof. <a href="https://www.chenfengx.com/">Chenfeng Xu</a>. My research interests lie in Machine Learning Systems and Generative Models, with the goal of developing AI systems that expand human potential.
+      I am a first-year Ph.D. student in Computer Science at <a href="https://www.cs.utexas.edu/">The University of Texas at Austin</a>, advised by Prof. <a href="https://www.chenfengx.com/">Chenfeng Xu</a>. My research interests lie in Machine Learning Systems and Generative Models, intending to develop AI systems that expand human potential.
     </p>
     <p>
       I received my B.Eng. degree from Huazhong University of Science and Technology (HUST) in June 2026, where I was advised by Prof. <a href="https://dk-liang.github.io/">Dingkang Liang</a> and Prof. <a href="https://xbai.vlrlab.net/">Xiang Bai</a>.
